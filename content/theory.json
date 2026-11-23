@@ -1,9 +1,13 @@
 {
   "theory": {
     "en": {
-      "title": "Listening to a dastgāh",
+      "title": "Dastgāh: hearing a modal system",
       "lead": "Follow a melody through three moments: the opening that establishes its character, the phrase that takes it elsewhere, and the return that makes the opening audible again.",
       "sections": [
+        [
+          "What the name Chahargah tells you",
+          "On a recording, Chahargah can name the whole dastgāh. A teacher demonstrating its darāmad may use the same word for the opening modal setting. Listen for what changes when the performer reaches Zabol or Mokhalef. A new region can acquire its own focal pitch and characteristic phrases, yet the passage still belongs to a performance of Chahargah. The opening pitch collection describes only one part of that larger form."
+        ],
         [
           "From a pitch to a phrase",
           "Sing a short phrase twice. Which note draws the melody back? On which note can you comfortably stop? Two melodies can use the same pitches and answer these questions differently. A scale diagram shows available intervals. The way a musician approaches, emphasizes and leaves those notes gives them distinct roles."
@@ -19,6 +23,14 @@
         [
           "Shāhed, ist and finalis",
           "Shāhed names a focal note. An ist can mark a point of rest along the way. The application uses “finalis” for a characteristic concluding pitch in a specified modal context. A sustained note, a temporary pause and a final cadence can fall on different pitches. The notes panel gives the source and status of the model for the selected context."
+        ],
+        [
+          "Darāmad and forud",
+          "The darāmad establishes a point of reference. Listen to the small stretch of register the opening explores and to the turns of phrase that keep bringing one note into focus. A forud makes an earlier modal setting audible again. Simply reaching a lower note tells you little: listen to the route of approach and whether it recalls the opening. A performer can make such a return within a performance as well as at its close."
+        ],
+        [
+          "Two meanings of āvāz",
+          "In a repertory list, āvāz may designate a modal tradition such as Dashti. In an account of a concert, āvāz can also mean singing or the freely paced vocal section. Ask which meaning makes sense in the sentence. An instrumentalist can play Dashti, and a singer can sing the darāmad of a dastgāh. The instrument or voice alone will not tell you the classification."
         ]
       ],
       "links": [
@@ -33,13 +45,29 @@
         [
           "Sources for the application’s modal roles",
           "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Jean During · Darāmad",
+          "https://www.iranicaonline.org/articles/daramad/"
+        ],
+        [
+          "Jean During · Gusheh",
+          "https://www.iranicaonline.org/articles/gusa/"
+        ],
+        [
+          "Iranian classical music · Encyclopaedia Iranica",
+          "https://www.iranicaonline.org/articles/iran-xi-persian-music/"
         ]
       ]
     },
     "fa": {
-      "title": "دستگاه را چگونه بشنویم؟",
+      "title": "دستگاه و سیر ملودی",
       "lead": "یک جملهٔ موسیقی را از آغاز تا فرود دنبال کنید. ملودی کجا شخصیت خود را نشان می‌دهد، کجا از فضای آغازین دور می‌شود و چگونه دوباره به آن بازمی‌گردد؟",
       "sections": [
+        [
+          "چهارگاه نام دستگاه است یا مایه؟",
+          "روی جلد یک ضبط، «چهارگاه» می‌تواند به کل دستگاه اشاره کند. وقتی استادی درآمد چهارگاه را می‌نوازد، همین نام به مایه‌ای هم اشاره دارد که در آغاز می‌شنویم. در زابل یا مخالف، محل تکیه و شیوهٔ گردش ملودی عوض می‌شود. با این همه، آنچه می‌شنویم همچنان بخشی از اجرای دستگاه چهارگاه است. فواصل درآمد تنها بخشی از این سیر را وصف می‌کنند."
+        ],
         [
           "از نت تا جمله",
           "جمله‌ای کوتاه را دو بار زمزمه کنید. ملودی بارها به کدام نت برمی‌گردد؟ روی کدام نت می‌توانید مکث کنید؟ دو ملودی با نت‌های یکسان ممکن است پاسخ‌های متفاوتی داشته باشند. نمودار گام فاصله‌ها را نشان می‌دهد؛ برای شنیدن نقش هر نت باید به شیوهٔ نزدیک شدن به آن، تأکید بر آن و گذر از آن توجه کرد."
@@ -55,6 +83,14 @@
         [
           "شاهد، ایست و نت پایان",
           "شاهد نتی است که در یک فضای مُدال برجسته می‌شود. ایست می‌تواند جای مکثی موقت باشد. در برنامه، «نت پایان» به نتی گفته می‌شود که در بافت مورد بحث، جمله یا اجرای مُدال بر آن خاتمه می‌یابد. این نقش‌ها همیشه به یک نت تعلق ندارند. در بخش «نقش نت‌ها» می‌توانید منبع و میزان اطمینان هر نشانه را ببینید."
+        ],
+        [
+          "درآمد و فرود",
+          "در درآمد، با شنیدن چند جمله با مایهٔ دستگاه آشنا می‌شویم. به گسترهٔ آغازین و گردش‌هایی گوش کنید که یک نت را برجسته می‌کنند. فرود جمله یا گردش ملودیکی است که مایهٔ پیشین را دوباره به گوش می‌آورد. صرفِ پایین آمدن ملودی نشانهٔ فرود نیست؛ مهم این است که چه راهی به نتِ قرار می‌رسد و چه چیزی از درآمد را به یاد می‌آورد. فرود را در میانهٔ اجرا هم می‌توان شنید."
+        ],
+        [
+          "دو کاربرد «آواز»",
+          "در فهرست ردیف، «آواز دشتی» نام یکی از مایه‌های وابسته به شور است. در شرح یک برنامه، «آواز» ممکن است به خواندن یا به بخش آوازیِ با وزن آزاد اشاره کند. از بافت جمله می‌توان مقصود را دریافت. دشتی را می‌توان با تار نواخت و درآمد یک دستگاه را هم می‌توان خواند. آوازی یا سازی بودنِ اجرا به‌تنهایی جایگاه آن را در ردیف تعیین نمی‌کند."
         ]
       ],
       "links": [
@@ -69,6 +105,18 @@
         [
           "منابع و حدود اعتبار نقش نت‌ها (انگلیسی)",
           "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ژان دورینگ · درآمد",
+          "https://www.iranicaonline.org/articles/daramad/"
+        ],
+        [
+          "ژان دورینگ · گوشه",
+          "https://www.iranicaonline.org/articles/gusa/"
+        ],
+        [
+          "موسیقی دستگاهی ایران · دانشنامهٔ ایرانیکا",
+          "https://www.iranicaonline.org/articles/iran-xi-persian-music/"
         ]
       ]
     }
@@ -93,6 +141,10 @@
         [
           "Listen beyond the grid",
           "Repeat a short phrase slowly and compare the same scale degree in different gestures. A performer may adjust its height with the melodic context. A circle can help you name the approximate interval while a recording preserves the movement into and away from the note."
+        ],
+        [
+          "Reading a distance on the wheel",
+          "One full turn spans an octave. On this wheel a 100-cent interval occupies 30 degrees; a 200-cent interval occupies 60. Try both from the same starting pitch, then move the starting pitch and repeat. The angular distances stay the same. What the construction leaves open is the melodic function of the destination: a point at a given angle could be a passing note, a place of emphasis or the close of a phrase."
         ]
       ],
       "links": [
@@ -129,6 +181,10 @@
         [
           "ظرافت کوک در اجرا",
           "جمله‌ای کوتاه را چند بار بشنوید و صدای یک درجه را در حرکت‌های ملودیک مختلف مقایسه کنید. نوازنده یا خواننده ممکن است متناسب با جمله، آن را اندکی زیرتر یا بم‌تر اجرا کند. دایره به تخمین اندازهٔ فاصله کمک می‌کند؛ برای شنیدن مسیر رسیدن به نت و جدا شدن از آن، به اجرا برگردید."
+        ],
+        [
+          "خواندن فاصله از روی زاویه",
+          "یک دور کامل دایره برابر با یک اکتاو است. در این مدل، فاصلهٔ ۱۰۰ سِنتی زاویه‌ای ۳۰ درجه‌ای و فاصلهٔ ۲۰۰ سِنتی زاویه‌ای ۶۰ درجه‌ای می‌سازد. هر دو را از یک نت امتحان کنید و بعد نت آغاز را جابه‌جا کنید. زاویه‌ها ثابت می‌مانند، اما از زاویه به‌تنهایی نمی‌توان فهمید نت مقصد در جمله نتِ گذر است، محل تکیه است یا پایان جمله."
         ]
       ],
       "links": [
@@ -167,6 +223,10 @@
         [
           "Read the two recognition results",
           "The circle ranks scale and tonic candidates using pitch and melodic evidence. The V4 panel compares a recording’s opening with up to three passages and reports which Persian modal labels receive support. Natural Minor has a separate pitch-and-tonic check. If the readings differ, inspect the passage times, hear the cadence and try another candidate. Passage agreement is a count, and the project reports no independent accuracy estimate for passage voting or Natural Minor."
+        ],
+        [
+          "When two readings are close",
+          "Suppose the analyzer ranks two modes close together. Replay the simplified melody against the original first. If it follows the bass during a sustained vocal note, the candidates describe the wrong line. If the melody was tracked well, listen to a phrase ending and compare its focal and stopping notes with the reference notes for each candidate. Record both possibilities if the excerpt gives you too little evidence to choose."
         ]
       ],
       "links": [
@@ -207,6 +267,10 @@
         [
           "خواندن دو نتیجهٔ تحلیل",
           "در دایره، گام‌ها و نت‌های مبنای پیشنهادی با تکیه بر زیر و بمی و مسیر ملودی رتبه‌بندی می‌شوند. بخش «شناسایی مُد» در نسخهٔ چهارم، آغاز ضبط را با حداکثر سه بخش از اجرا می‌سنجد و نشان می‌دهد چند بخش از هر تشخیص پشتیبانی می‌کنند. برای مینور طبیعی آزمون جداگانه‌ای بر پایهٔ فواصل و نت مبنا وجود دارد. اگر نتیجه‌ها متفاوت بودند، به فرود هر بخش گوش کنید و گزینه‌های دیگر را بیازمایید. برای رأی‌گیری میان بخش‌ها و تشخیص مینور طبیعی هنوز برآورد مستقلی از دقت منتشر نشده است."
+        ],
+        [
+          "وقتی دو تشخیص به هم نزدیک‌اند",
+          "اگر برنامه دو مایه را با امتیازهای نزدیک نشان می‌دهد، نخست ملودی بازسازی‌شده را با اصل ضبط مقایسه کنید. اگر هنگام کشش صدای خواننده، برنامه خط باس را دنبال کرده باشد، تحلیل بر پایهٔ خط دیگری انجام شده است. اگر خط ملودی درست شنیده می‌شود، پایان یک جمله را جدا کنید و محل تکیه و ایست آن را با توضیحات هر دو مایه بسنجید. گاهی نمونه برای انتخاب یکی از دو پاسخ به اندازهٔ کافی گویا نیست."
         ]
       ],
       "links": [
@@ -225,6 +289,88 @@
         [
           "روش شناسایی بخش‌های اجرا و ارزیابی مدل (انگلیسی)",
           "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/experimental/v4_comparison/README.md"
+        ]
+      ]
+    }
+  },
+  "radif": {
+    "en": {
+      "title": "The radif and the art of learning a phrase",
+      "lead": "What does a musician remember after learning a gusheh by ear? Its pitches are one part of the answer. The placement of an ornament, the weight of a pause and the way one phrase answers another can be just as revealing.",
+      "sections": [
+        [
+          "A repertory in a particular telling",
+          "A radif brings named melodic units, or gushehs, into an order that a teacher transmits. The name of the musician associated with a radif matters. Mirzā Abdollāh’s instrumental radif and the vocal radif of Abdollāh Davāmi are two identifiable bodies of teaching. When comparing recordings, record the name of the radif, performer and gusheh. A shared title is the start of the comparison."
+        ],
+        [
+          "How large is a gusheh?",
+          "A gusheh can be a compact melodic figure or a substantial episode with an opening, expansion and conclusion of its own. Some names refer to a recognizable rhythmic or melodic pattern that can occur in more than one dastgāh. Kereshmeh is one such name. When it reappears in another setting, listen separately for the rhythm you recognize and the pitches that give the passage its local colour."
+        ],
+        [
+          "From imitation to improvisation",
+          "First learn a short passage closely enough to sing it back with its pauses intact. Then compare it with a second performance of the same gusheh. A player may dwell on a note, lengthen a figure or find another way into a familiar ending. Listening for what survives those choices helps explain how learning a radif can prepare a musician to improvise and compose."
+        ],
+        [
+          "A comparison you can repeat",
+          "Choose two accounts of a darāmad. On the first pass, hum the last few notes of the opening phrase. On the second, tap where the performer pauses. On the third, listen for a change of register or a repeated turn. Keep the observations separate: two phrases can end on the same pitch while taking different melodic paths. The recording or transcription you used belongs beside your notes."
+        ]
+      ],
+      "links": [
+        [
+          "Jean During · Gusheh",
+          "https://www.iranicaonline.org/articles/gusa/"
+        ],
+        [
+          "Jean During · Darāmad",
+          "https://www.iranicaonline.org/articles/daramad/"
+        ],
+        [
+          "Watch: The Radif · UNESCO audiovisual archive",
+          "https://www.unesco.org/archives/multimedia/document-304"
+        ],
+        [
+          "Vocal and instrumental radifs · Center for Iranian Music",
+          "https://centerforiranianmusic.org/concepts/"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "ردیف و یادگیریِ گوشه",
+      "lead": "هنرجو پس از یاد گرفتن یک گوشه چه چیزی را به خاطر می‌سپارد؟ افزون بر نت‌ها، جای تحریر یا تزیین، کششِ یک مکث و شیوهٔ پاسخ دادنِ جملهٔ دوم به جملهٔ نخست هم بخشی از آن چیزی است که از استاد می‌آموزد.",
+      "sections": [
+        [
+          "ردیف به روایت چه کسی؟",
+          "در ردیف، گوشه‌های نام‌دار با ترتیبی معین از استاد به شاگرد می‌رسند. نام راوی اهمیت دارد: ردیف سازیِ میرزاعبدالله و ردیف آوازیِ عبدالله دوامی دو مرجع مشخص برای آموختن‌اند. اگر دو ضبط را مقایسه می‌کنید، نام روایت، نام اجراکننده و نام گوشه را کنار هم بنویسید. همنام بودن دو گوشه نقطهٔ آغاز مقایسه است."
+        ],
+        [
+          "اندازه و نقش گوشه",
+          "گوشه گاهی در حد یک نقش کوتاه ملودیک است و گاهی چنان بسط پیدا می‌کند که درآمد و فرودِ خود را دارد. بعضی نام‌ها به الگویی اشاره دارند که در بیش از یک دستگاه می‌آید. برای نمونه، هنگام شنیدن کرشمه در دو دستگاه، نخست ضرباهنگِ آشنا را پیدا کنید؛ سپس ببینید با تغییر مایه، ملودی روی چه نت‌هایی می‌گردد و کجا آرام می‌گیرد."
+        ],
+        [
+          "از تقلید تا بداهه‌پردازی",
+          "یک جملهٔ کوتاه را چنان از روی اجرا یاد بگیرید که بتوانید جای مکث‌ها را هم بازخوانی کنید. سپس همان گوشه را در اجرای دیگری بشنوید. ممکن است نوازنده روی نتی بیشتر درنگ کند، نقشی را بسط دهد یا از راه دیگری به فرودی آشنا برسد. آنچه با وجود این تغییرها بازشناختنی می‌ماند، نشان می‌دهد آموختن ردیف چگونه مایهٔ بداهه‌پردازی و آهنگ‌سازی می‌شود."
+        ],
+        [
+          "تمرین مقایسهٔ دو روایت",
+          "دو اجرا از یک درآمد انتخاب کنید. بار نخست، چند نتِ آخرِ جملهٔ آغازین را زمزمه کنید. بار دوم، جای مکث‌ها را با دست علامت بزنید. بار سوم، به تغییر منطقهٔ صوتی یا بازگشت یک گردش ملودیک گوش دهید. این سه مشاهده را جدا یادداشت کنید؛ دو جمله ممکن است روی یک نت بنشینند و از دو راه متفاوت به آن برسند. نام ضبط یا آوانگاری را نیز ثبت کنید."
+        ]
+      ],
+      "links": [
+        [
+          "ژان دورینگ · گوشه",
+          "https://www.iranicaonline.org/articles/gusa/"
+        ],
+        [
+          "ژان دورینگ · درآمد",
+          "https://www.iranicaonline.org/articles/daramad/"
+        ],
+        [
+          "فیلم «ردیف موسیقی ایرانی» · آرشیو دیداری‌شنیداری یونسکو",
+          "https://www.unesco.org/archives/multimedia/document-304"
+        ],
+        [
+          "ردیف‌های آوازی و سازی · مرکز موسیقی ایرانی",
+          "https://centerforiranianmusic.org/concepts/"
         ]
       ]
     }

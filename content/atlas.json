@@ -23,6 +23,10 @@
         [
           "Reading the reconstruction",
           "Learn supplies the historical context, and Train & Data pairs exercises with an exact pitch table. The four-string illustration and synthesized tones help you test the mathematics. Evidence for how a particular musician played must come from other sources."
+        ],
+        [
+          "Reading an interval from a length",
+          "On an ideal string held at constant tension, stop the string so that three quarters of its original length vibrates. The length ratio is 3/4 and the frequency ratio is its reciprocal, 4/3, a perfect fourth. Shorten it again to half the original length and you hear the octave above the open string. Keep track of which quantity the Atlas ruler is displaying before comparing two fractions."
         ]
       ],
       "links": [
@@ -79,6 +83,10 @@
         [
           "چگونه این بازسازی را بخوانیم؟",
           "درس‌ها پیشینهٔ تاریخی را توضیح می‌دهند و بخش تمرین و داده‌ها، جدول نسبت‌ها را در کنار تمرین‌های شنیداری قرار می‌دهد. تصویر ساز چهار‌سیم و صداهای شبیه‌سازی‌شده برای آزمودن رابطه‌های ریاضی طراحی شده‌اند. داوری دربارهٔ شیوهٔ اجرای یک نوازندهٔ تاریخی به شواهد دیگری نیاز دارد."
+        ],
+        [
+          "خواندن فاصله از روی طول سیم",
+          "با فرض ثابت بودن کشش و چگالی خطی سیم، اگر سه‌چهارم طول اولیه مرتعش شود، نسبت طول ۳/۴ و نسبت بسامد معکوسِ آن، یعنی ۴/۳ است؛ فاصلهٔ حاصل چهارمِ درست است. با نصف شدن طول مرتعش، صدا یک اکتاو زیرتر از سیمِ دست‌باز شنیده می‌شود. پیش از مقایسهٔ دو کسر، ببینید درجه‌بندی اطلس طول را نشان می‌دهد یا بسامد را."
         ]
       ],
       "links": [
@@ -231,6 +239,10 @@
         [
           "Citing the work",
           "For the scale application use the citation metadata in its repository and include a version or access date. For the historical application the creator suggests: Hosseini, Pouya. Al-Urmawī Advar Atlas: A Scholarly Interactive Edition. Persian Music Scales · Historical Theory Series, 2026. Cite the manuscript or study directly when discussing its evidence."
+        ],
+        [
+          "Describing one excerpt precisely",
+          "For a comparison you can revisit, note the source recording, the performer, the time span and any gusheh identified by the source. Separate three observations: the pitches you hear, the functions you infer from the phrases, and the candidate returned by the software. When a phrase ending falls outside the selected excerpt, label the conclusion as uncertain. Someone working with the same passage can then tell which parts of your reading depend on context."
         ]
       ],
       "links": [
@@ -295,6 +307,10 @@
         [
           "شیوهٔ ارجاع",
           "برای برنامهٔ گام‌ها از اطلاعات استنادی مخزن استفاده کنید و شمارهٔ نسخه یا تاریخ دسترسی را بیاورید. برای اطلس، صورت استناد پیشنهادی پدیدآورنده در راهنمای مخزن آمده است: حسینی، پویا. اطلس ادوار ارموی، ویرایش پژوهشی تعاملی. مجموعهٔ نظریهٔ تاریخیِ گام‌های موسیقی ایرانی، ۲۰۲۶. هنگام بررسی یک نسخهٔ خطی یا پژوهش، به همان منبع نیز ارجاع دهید."
+        ],
+        [
+          "ثبت شواهدِ یک نمونهٔ شنیداری",
+          "برای مقایسه‌ای که بتوان دوباره به آن رجوع کرد، نام ضبط، اجراکننده، زمان آغاز و پایان نمونه و نام گوشه را، اگر در منبع آمده، ثبت کنید. سه چیز را جدا بنویسید: نت‌هایی که شنیده‌اید، نقشی که از جمله‌بندی برای آن‌ها استنباط می‌کنید و پیشنهادی که برنامه داده است. اگر فرود بیرون از محدودهٔ نمونه مانده، دربارهٔ پایان جمله با احتیاط داوری کنید. این شیوه به شنوندهٔ بعدی نشان می‌دهد برداشت شما بر کدام شواهد تکیه دارد."
         ]
       ],
       "links": [

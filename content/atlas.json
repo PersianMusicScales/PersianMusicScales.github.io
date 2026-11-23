@@ -1,0 +1,344 @@
+{
+  "history": {
+    "en": {
+      "title": "Al-Urmawī Advar Atlas",
+      "lead": "Begin with a single string. Move a fret and its sounding length changes, its frequency rises, and a numerical relationship becomes audible. The Atlas uses this experiment to introduce the world of Ṣafī al-Dīn al-Urmawī.",
+      "sections": [
+        [
+          "Reading the Book of Cycles",
+          "In the thirteenth century, al-Urmawī described interval divisions and ways of combining them into cycles in the Kitāb al-Adwār. A copy of the treatise survives as British Library Or 136. The catalogue and folios in the Qatar Digital Library let readers move from the modern diagram to a manuscript witness."
+        ],
+        [
+          "One string, two ratios",
+          "Choose a position in Explore. With the string material and tension held constant, a sounding length of three quarters gives a frequency of four thirds of the open string. Listen to the two pitches, then compare the pure tone with the plucked model. The pitch relationship stays the same as the timbre changes."
+        ],
+        [
+          "Building a fourth",
+          "The model includes a tetrachord with two whole tones of 9/8 and a limma of 256/243. Multiplying the three ratios gives 4/3, a fourth. On the Atlas monochord the seventeen steps of the octave have unequal sizes. Construct shows one pedagogical sequence for locating the divisions."
+        ],
+        [
+          "From an interval to a mode",
+          "Species & Modes lets you compare orders of intervals. A medieval cycle and a present-day dastgah can share a name while differing in their musical organization. Kioumars Poorhaydari’s study of Iṣfahān follows this problem across treatises and radifs."
+        ],
+        [
+          "Reading the reconstruction",
+          "Learn supplies the historical context, and Train & Data pairs exercises with an exact pitch table. The four-string illustration and synthesized tones help you test the mathematics. Evidence for how a particular musician played must come from other sources."
+        ]
+      ],
+      "links": [
+        [
+          "Launch the Atlas",
+          "https://persianmusicscales.github.io/urmawi-advar-atlas/?lang=en"
+        ],
+        [
+          "Explore the monochord",
+          "https://persianmusicscales.github.io/urmawi-advar-atlas/?lang=en&panel=explore&view=theory"
+        ],
+        [
+          "Compare interval species",
+          "https://persianmusicscales.github.io/urmawi-advar-atlas/?lang=en&panel=modes"
+        ],
+        [
+          "British Library Or 136 · manuscript",
+          "https://www.qdl.qa/en/archive/81055/vdc_100085098732.0x000001"
+        ],
+        [
+          "Encyclopaedia Iranica · Dawr",
+          "https://www.iranicaonline.org/articles/dawr-2/"
+        ],
+        [
+          "Poorhaydari · Iṣfahān in Persian Art Music (2025)",
+          "https://www.mtosmt.org/issues/mto.25.31.2/mto.25.31.2.poorhaydari.php"
+        ],
+        [
+          "Atlas editorial notes and bibliography",
+          "https://github.com/PersianMusicScales/urmawi-advar-atlas/blob/main/SCHOLARLY_NOTES.md"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "اطلس ادوار صفی‌الدین ارموی",
+      "lead": "از یک سیم آغاز کنید. با جابه‌جایی پرده، طول بخش مرتعش سیم تغییر می‌کند و می‌توانید نسبت دو عدد را به شکل یک فاصلهٔ موسیقایی بشنوید. اطلس از همین آزمایش برای آشنایی با نظریهٔ صفی‌الدین ارموی بهره می‌گیرد.",
+      "sections": [
+        [
+          "خواندن کتاب الادوار",
+          "صفی‌الدین ارموی در سدهٔ هفتم هجری در کتاب الادوار به تقسیم فاصله‌ها و ترکیب آن‌ها در قالب دورها پرداخت. نسخه‌ای از این رساله به شمارهٔ Or 136 در کتابخانهٔ بریتانیا نگهداری می‌شود. فهرست و تصاویر برگ‌های آن در کتابخانهٔ دیجیتال قطر در دسترس است."
+        ],
+        [
+          "یک سیم و دو نسبت",
+          "در بخش کاوش، جای یک پرده را انتخاب کنید. اگر جنس و کشش سیم ثابت بماند و سه‌چهارم طول سیم آزاد به ارتعاش درآید، بسامد آن چهار‌سوم بسامد سیم آزاد خواهد شد. دو صدا را بشنوید و سپس صدای خالص را با صدای شبیه‌سازی‌شدهٔ سیم زخمه‌ای مقایسه کنید. فاصله ثابت می‌ماند و رنگ صوتی تغییر می‌کند."
+        ],
+        [
+          "ساختن فاصلهٔ چهارم",
+          "یکی از دانگ‌های مدل از دو پرده، هر یک به نسبت ۹ به ۸، و یک بقیه به نسبت ۲۵۶ به ۲۴۳ ساخته می‌شود. حاصل‌ضرب این سه نسبت، ۴ به ۳ است. در مدل تک‌سیم اطلس، اکتاو به هفده فاصلهٔ نامساوی تقسیم شده است. بخش ساخت، یکی از راه‌های آموزشی یافتن این جایگاه‌ها را نشان می‌دهد."
+        ],
+        [
+          "از فاصله تا دور",
+          "در بخش اجناس و مقام‌ها می‌توانید ترتیب فاصله‌ها را مقایسه کنید. گاهی یک دور قدیم و یک دستگاه یا آواز امروزی نام مشترک دارند، اما سازمان موسیقایی‌شان در گذر زمان دگرگون شده است. پژوهش کیومرث پورحیدری این پرسش را برای اصفهان در رساله‌های کهن و روایت‌های ردیف پی می‌گیرد."
+        ],
+        [
+          "چگونه این بازسازی را بخوانیم؟",
+          "درس‌ها پیشینهٔ تاریخی را توضیح می‌دهند و بخش تمرین و داده‌ها، جدول نسبت‌ها را در کنار تمرین‌های شنیداری قرار می‌دهد. تصویر ساز چهار‌سیم و صداهای شبیه‌سازی‌شده برای آزمودن رابطه‌های ریاضی طراحی شده‌اند. داوری دربارهٔ شیوهٔ اجرای یک نوازندهٔ تاریخی به شواهد دیگری نیاز دارد."
+        ]
+      ],
+      "links": [
+        [
+          "ورود به اطلس",
+          "https://persianmusicscales.github.io/urmawi-advar-atlas/?lang=fa"
+        ],
+        [
+          "کاوش در تک‌سیم",
+          "https://persianmusicscales.github.io/urmawi-advar-atlas/?lang=fa&panel=explore&view=theory"
+        ],
+        [
+          "مقایسهٔ اجناس",
+          "https://persianmusicscales.github.io/urmawi-advar-atlas/?lang=fa&panel=modes"
+        ],
+        [
+          "نسخهٔ خطی کتابخانهٔ بریتانیا، Or 136",
+          "https://www.qdl.qa/en/archive/81055/vdc_100085098732.0x000001"
+        ],
+        [
+          "دانشنامهٔ ایرانیکا، مدخل دور",
+          "https://www.iranicaonline.org/articles/dawr-2/"
+        ],
+        [
+          "پورحیدری، بررسی تاریخی و نظری اصفهان (۲۰۲۵)",
+          "https://www.mtosmt.org/issues/mto.25.31.2/mto.25.31.2.poorhaydari.php"
+        ],
+        [
+          "یادداشت‌های پژوهشی و منابع اطلس",
+          "https://github.com/PersianMusicScales/urmawi-advar-atlas/blob/main/SCHOLARLY_NOTES.md"
+        ]
+      ]
+    }
+  },
+  "about": {
+    "en": {
+      "title": "About Persian Music Scales",
+      "lead": "Dr. Pouya Hosseini created Persian Music Scales to give listeners, performers and students a way to see and hear relationships between pitches in Persian music.",
+      "sections": [
+        [
+          "A musician’s question",
+          "What changes when a familiar phrase starts on another pitch? The original educational site approached this question through diagrams and comparisons. The scale explorer lets a visitor transpose a model, listen and follow the changes around a circle. The Wiki carries the longer explanations."
+        ],
+        [
+          "The creator",
+          "Pouya Hosseini plays setar and santur, composes, and works in electrochemistry and surface science. His personal website brings together his musical performances and scientific work. His music-theory tools and their documentation are collected here."
+        ],
+        [
+          "Two independent applications",
+          "The scale explorer studies models of present-day dastgah and avaz. The Advar Atlas examines medieval theoretical writings through a monochord. Each application maintains its own data, documentation and release history."
+        ],
+        [
+          "Permissions and attribution",
+          "The repositories publish the creator’s licensing terms. The main application also identifies separately licensed third-party components. Consult the relevant project notices before reproducing software, figures, sound or text. The creator’s website provides a contact link for inquiries."
+        ],
+        [
+          "Privacy on this site",
+          "The site serves its fonts and illustrations locally. Search runs in your browser. A manual theme selection is stored on this device. Opening an application or a reference takes you to a separate site with its own network requests and privacy practices."
+        ]
+      ],
+      "links": [
+        [
+          "Creator’s website and contact",
+          "https://drpouyahosseini.github.io/"
+        ],
+        [
+          "Project repositories",
+          "https://github.com/PersianMusicScales/"
+        ],
+        [
+          "Scale app license",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/LICENSE"
+        ],
+        [
+          "Third-party notices",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/THIRD_PARTY_NOTICES.md"
+        ],
+        [
+          "Atlas license",
+          "https://github.com/PersianMusicScales/urmawi-advar-atlas/blob/main/LICENSE"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "دربارهٔ پروژه",
+      "lead": "دکتر پویا حسینی «گام‌های موسیقی ایرانی» را پدید آورد تا شنوندگان، نوازندگان و هنرجویان بتوانند رابطهٔ میان نغمه‌ها را هم ببینند و هم بشنوند.",
+      "sections": [
+        [
+          "پرسشی برای نوازنده",
+          "اگر جمله‌ای آشنا را از نتی دیگر آغاز کنیم، چه چیزی تغییر می‌کند؟ وبگاه آموزشی نخستین، این پرسش را با نمودار و مقایسه پیش می‌کشید. اکنون در برنامه می‌توان الگو را انتقال داد، صدایش را شنید و تغییر جای نت‌ها را روی دایره دنبال کرد. توضیح‌های مفصل‌تر در ویکی آمده است."
+        ],
+        [
+          "پدیدآورنده",
+          "پویا حسینی نوازندهٔ سه‌تار و سنتور و آهنگساز است و در زمینهٔ الکتروشیمی و علم سطح پژوهش می‌کند. اجراهای موسیقی و فعالیت‌های علمی او در وبگاه شخصی‌اش معرفی شده‌اند. اینجا آثار و ابزارهای او در زمینهٔ نظریهٔ موسیقی گرد آمده‌اند."
+        ],
+        [
+          "دو برنامهٔ مستقل",
+          "برنامهٔ گام‌ها الگوهایی از دستگاه‌ها و آوازهای امروز را بررسی می‌کند. اطلس ادوار، نوشته‌های نظری سده‌های میانه را به کمک تک‌سیم شرح می‌دهد. داده‌ها، مستندات و تاریخچهٔ انتشار هر برنامه جداگانه نگهداری می‌شود."
+        ],
+        [
+          "حقوق آثار و ذکر منبع",
+          "شرایط استفاده از آثار پدیدآورنده در مخزن هر برنامه آمده است. برنامهٔ گام‌ها مجوز اجزای متعلق به اشخاص ثالث را نیز جداگانه مشخص کرده است. برای بازنشر نرم‌افزار، نمودار، صدا یا متن، شرایط همان اثر را بخوانید. برای تماس با پدیدآورنده می‌توانید به وبگاه شخصی او مراجعه کنید."
+        ],
+        [
+          "حریم خصوصی در این سایت",
+          "قلم‌ها و تصویرها از همین سایت بارگیری می‌شوند. جست‌وجو در مرورگر شما انجام می‌شود و انتخاب دستی حالت روشن یا تیره روی همین دستگاه ذخیره می‌شود. برنامه‌ها و منابع پیوندشده سایت‌های مستقلی هستند و شیوهٔ مدیریت داده‌های خود را دارند."
+        ]
+      ],
+      "links": [
+        [
+          "وبگاه و راه تماس با پدیدآورنده",
+          "https://drpouyahosseini.github.io/"
+        ],
+        [
+          "مخزن‌های پروژه",
+          "https://github.com/PersianMusicScales/"
+        ],
+        [
+          "مجوز برنامهٔ گام‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/LICENSE"
+        ],
+        [
+          "مجوز اجزای متعلق به دیگران",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/THIRD_PARTY_NOTICES.md"
+        ],
+        [
+          "مجوز اطلس",
+          "https://github.com/PersianMusicScales/urmawi-advar-atlas/blob/main/LICENSE"
+        ]
+      ]
+    }
+  },
+  "research": {
+    "en": {
+      "title": "Research and references",
+      "lead": "Follow the evidence from a point on the circle to its source, or from a recognition result to the method that produced it.",
+      "sections": [
+        [
+          "Reading a pitch model",
+          "The scale dataset records the interval patterns used by the application. The visualization methodology explains their geometry. When citing a diagram, identify the selected model and starting note and record the date or software revision. An observed performance can depart from the grid."
+        ],
+        [
+          "Reading a modal annotation",
+          "The app’s modal-role notes distinguish documented, partial and provisional assignments. Look up the named introductory setting before applying a shahed or finalis marker to a different gusheh. The research notes document the relationship to the instrumental radif of Mirza Abdollah."
+        ],
+        [
+          "Interpreting a recording",
+          "The V4 method compares an opening segment with passages drawn from the recording. The method notes distinguish the original evaluation from the subsequent passage comparison, whose accuracy has yet to be measured. Listen to the extracted melody, inspect alternate readings and check whether the clip includes a characteristic return."
+        ],
+        [
+          "Citing the work",
+          "For the scale application use the citation metadata in its repository and include a version or access date. For the historical application the creator suggests: Hosseini, Pouya. Al-Urmawī Advar Atlas: A Scholarly Interactive Edition. Persian Music Scales · Historical Theory Series, 2026. Cite the manuscript or study directly when discussing its evidence."
+        ]
+      ],
+      "links": [
+        [
+          "Theory reference and glossary",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/reference/"
+        ],
+        [
+          "Circular visualization method",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/reference/methodology.html"
+        ],
+        [
+          "Scale dataset (JSON)",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/data/persian-scales.json"
+        ],
+        [
+          "Shahed and finalis research notes",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Audio analysis methodology",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/reference/audio-analysis.html"
+        ],
+        [
+          "V4 method and evaluation",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/experimental/v4_comparison/README.md"
+        ],
+        [
+          "Bilingual Wiki",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/wiki"
+        ],
+        [
+          "Scale app citation metadata",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/CITATION.cff"
+        ],
+        [
+          "Atlas citation and documentation",
+          "https://github.com/PersianMusicScales/urmawi-advar-atlas"
+        ],
+        [
+          "Original project essay",
+          "https://sites.google.com/view/persianmusicscales/article"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "پژوهش و منابع",
+      "lead": "از یک نقطه روی دایره می‌توان به منبع الگوی آن رسید؛ از نتیجهٔ تشخیص یک ضبط هم می‌توان به روشی رسید که آن نتیجه را به دست داده است.",
+      "sections": [
+        [
+          "خواندن الگوی فواصل",
+          "مجموعه‌دادهٔ برنامه، الگوهای فواصل را ثبت می‌کند و راهنمای روش ترسیم، هندسهٔ آن‌ها را شرح می‌دهد. برای ارجاع به یک نمودار، نام الگو، نت آغاز و تاریخ دسترسی یا نسخهٔ نرم‌افزار را ذکر کنید. فواصل یک اجرای معین ممکن است با جایگاه‌های شبکه تفاوت داشته باشند."
+        ],
+        [
+          "خواندن نقش نت‌ها",
+          "در یادداشت‌های نقش نت‌ها، اطلاعات مستند، شواهد ناقص و انتساب‌های موقت جدا شده‌اند. پیش از تعمیم نت شاهد یا نت پایان به گوشه‌ای دیگر، ببینید نشانگر برای کدام درآمد یا آواز تعیین شده است. نسبت این انتخاب‌ها با ردیف سازی میرزاعبدالله در یادداشت‌های پژوهشی توضیح داده شده است."
+        ],
+        [
+          "تفسیر یک ضبط",
+          "روش V4 آغاز ضبط را با چند بخش دیگر آن مقایسه می‌کند. در مستندات روش، ارزیابی نخستین از روش تازه‌ترِ مقایسهٔ بخش‌ها جدا شده است؛ دقت روش تازه هنوز اندازه‌گیری نشده است. ملودی استخراج‌شده را بشنوید، گزینه‌های دیگر را بسنجید و ببینید آیا نمونهٔ شنیداری فرودی شاخص دارد."
+        ],
+        [
+          "شیوهٔ ارجاع",
+          "برای برنامهٔ گام‌ها از اطلاعات استنادی مخزن استفاده کنید و شمارهٔ نسخه یا تاریخ دسترسی را بیاورید. برای اطلس، صورت استناد پیشنهادی پدیدآورنده در راهنمای مخزن آمده است: حسینی، پویا. اطلس ادوار ارموی، ویرایش پژوهشی تعاملی. مجموعهٔ نظریهٔ تاریخیِ گام‌های موسیقی ایرانی، ۲۰۲۶. هنگام بررسی یک نسخهٔ خطی یا پژوهش، به همان منبع نیز ارجاع دهید."
+        ]
+      ],
+      "links": [
+        [
+          "مرجع نظریه و واژه‌نامه",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/reference/"
+        ],
+        [
+          "روش ترسیم دایره",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/reference/methodology.html"
+        ],
+        [
+          "داده‌های گام‌ها (JSON)",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/data/persian-scales.json"
+        ],
+        [
+          "پژوهش دربارهٔ شاهد و نت پایان",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "روش تحلیل صوت",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/reference/audio-analysis.html"
+        ],
+        [
+          "روش و ارزیابی V4",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/experimental/v4_comparison/README.md"
+        ],
+        [
+          "ویکی دوزبانه",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/wiki"
+        ],
+        [
+          "اطلاعات استنادی برنامه",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/CITATION.cff"
+        ],
+        [
+          "شیوهٔ ارجاع به اطلس و مستندات آن",
+          "https://github.com/PersianMusicScales/urmawi-advar-atlas"
+        ],
+        [
+          "مقالهٔ نخستین پروژه",
+          "https://sites.google.com/view/persianmusicscales/article"
+        ]
+      ]
+    }
+  }
+}

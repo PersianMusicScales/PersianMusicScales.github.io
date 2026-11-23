@@ -1,0 +1,232 @@
+{
+  "theory": {
+    "en": {
+      "title": "Listening to a dastgāh",
+      "lead": "Follow a melody through three moments: the opening that establishes its character, the phrase that takes it elsewhere, and the return that makes the opening audible again.",
+      "sections": [
+        [
+          "From a pitch to a phrase",
+          "Sing a short phrase twice. Which note draws the melody back? On which note can you comfortably stop? Two melodies can use the same pitches and answer these questions differently. A scale diagram shows available intervals. The way a musician approaches, emphasizes and leaves those notes gives them distinct roles."
+        ],
+        [
+          "Dastgāh, āvāz and the radif",
+          "A dastgāh organizes melodic types called gushehs around a principal modal area. The darāmad introduces that area. Later gushehs can shift the emphasis or lead into another mode, and a forud can bring the music home. The radif is a transmitted ordering of this repertory. Different lineages preserve different versions."
+        ],
+        [
+          "How the āvāzes are related",
+          "In the grouping used here, Abu Ata, Bayat-e Tork, Afshari and Dashti belong to the Shur family. Bayat-e Esfahan is associated with Homayoun. Each āvāz has recognizable melodic behavior. When comparing two relatives, listen for where a phrase lingers, where it pauses and how it closes."
+        ],
+        [
+          "Shāhed, ist and finalis",
+          "Shāhed names a focal note. An ist can mark a point of rest along the way. The application uses “finalis” for a characteristic concluding pitch in a specified modal context. A sustained note, a temporary pause and a final cadence can fall on different pitches. The notes panel gives the source and status of the model for the selected context."
+        ]
+      ],
+      "links": [
+        [
+          "Jean During, “Dastgāh” · Encyclopaedia Iranica",
+          "https://www.iranicaonline.org/articles/dastgah/"
+        ],
+        [
+          "Persian music theory · project Wiki",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/wiki/EN-Music-Theory"
+        ],
+        [
+          "Sources for the application’s modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "دستگاه را چگونه بشنویم؟",
+      "lead": "یک جملهٔ موسیقی را از آغاز تا فرود دنبال کنید. ملودی کجا شخصیت خود را نشان می‌دهد، کجا از فضای آغازین دور می‌شود و چگونه دوباره به آن بازمی‌گردد؟",
+      "sections": [
+        [
+          "از نت تا جمله",
+          "جمله‌ای کوتاه را دو بار زمزمه کنید. ملودی بارها به کدام نت برمی‌گردد؟ روی کدام نت می‌توانید مکث کنید؟ دو ملودی با نت‌های یکسان ممکن است پاسخ‌های متفاوتی داشته باشند. نمودار گام فاصله‌ها را نشان می‌دهد؛ برای شنیدن نقش هر نت باید به شیوهٔ نزدیک شدن به آن، تأکید بر آن و گذر از آن توجه کرد."
+        ],
+        [
+          "دستگاه، آواز و ردیف",
+          "دستگاه مجموعه‌ای از گوشه‌هاست که با یک مایهٔ اصلی پیوند دارند. درآمد این مایه را معرفی می‌کند. گوشه‌های بعدی می‌توانند محل تأکید را عوض کنند یا ملودی را به مایه‌ای دیگر ببرند. با فرود، فضای آغازین دوباره شنیده می‌شود. ردیف، مجموعه و ترتیب گوشه‌هایی است که در سنت آموزشی منتقل شده‌اند و روایت‌های گوناگون دارد."
+        ],
+        [
+          "خویشاوندی آوازها",
+          "در دسته‌بندی این وبگاه، ابوعطا، بیات ترک، افشاری و دشتی از آوازهای خانوادهٔ شورند و بیات اصفهان با همایون پیوند دارد. هر آواز رفتار ملودیک ویژه‌ای دارد. برای مقایسهٔ دو آواز هم‌خانواده، به نت‌هایی گوش کنید که خواننده یا نوازنده بر آن‌ها تکیه می‌کند، مکث می‌کند یا جمله را به پایان می‌رساند."
+        ],
+        [
+          "شاهد، ایست و نت پایان",
+          "شاهد نتی است که در یک فضای مُدال برجسته می‌شود. ایست می‌تواند جای مکثی موقت باشد. در برنامه، «نت پایان» به نتی گفته می‌شود که در بافت مورد بحث، جمله یا اجرای مُدال بر آن خاتمه می‌یابد. این نقش‌ها همیشه به یک نت تعلق ندارند. در بخش «نقش نت‌ها» می‌توانید منبع و میزان اطمینان هر نشانه را ببینید."
+        ]
+      ],
+      "links": [
+        [
+          "مدخل «دستگاه»، نوشتهٔ ژان دورینگ در دانشنامهٔ ایرانیکا (انگلیسی)",
+          "https://www.iranicaonline.org/articles/dastgah/"
+        ],
+        [
+          "مبانی موسیقی دستگاهی در ویکی",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/wiki/FA-Music-Theory"
+        ],
+        [
+          "منابع و حدود اعتبار نقش نت‌ها (انگلیسی)",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ]
+      ]
+    }
+  },
+  "notation": {
+    "en": {
+      "title": "Koron, sori and the pitch circle",
+      "lead": "A written alteration, a position on a diagram and the pitch of a performed note each tell us something different. Start with a single note and compare all three.",
+      "sections": [
+        [
+          "Read the sign",
+          "Koron lowers the named note and sori raises it. On the application’s grid, D-koron sits between D-flat and D-natural. D-sori sits between D-natural and D-sharp. Listen to each in relation to D, then hear the altered note as part of a phrase."
+        ],
+        [
+          "Measure an interval",
+          "An octave spans 1,200 cents and doubles the frequency. An equal-tempered semitone occupies 100 cents. The app divides the octave into 24 equal 50-cent steps, so each step occupies 15 degrees of the circle. Equal angles represent equal frequency ratios."
+        ],
+        [
+          "Read the notation after transposition",
+          "Rotating a model moves all its pitch positions by the same interval. The staff beside the playback control recalculates the written accidentals. Its spelling describes the selected model at that rotation. A score or a particular radif rendition may use a different spelling or a variable degree."
+        ],
+        [
+          "Listen beyond the grid",
+          "Repeat a short phrase slowly and compare the same scale degree in different gestures. A performer may adjust its height with the melodic context. A circle can help you name the approximate interval while a recording preserves the movement into and away from the note."
+        ]
+      ],
+      "links": [
+        [
+          "Koron and sori · project reference",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/reference/microtones-koron-sori.html?lang=en"
+        ],
+        [
+          "Mathematics of the circle",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/wiki/EN-Scientific-Methodology"
+        ],
+        [
+          "How the staff spelling is calculated",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/dynamic-persian-notation.md"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "کُرُن، سُری و دایرهٔ فواصل",
+      "lead": "علامتی که روی خط حامل می‌بینیم، جایگاهی که روی دایره می‌خوانیم و صدایی که از ساز می‌شنویم، سه راه شناخت یک نت‌اند. برای مقایسه، از یک نت آشنا آغاز کنید.",
+      "sections": [
+        [
+          "علامت را بخوانید",
+          "کُرُن صدای نت را بم‌تر و سُری آن را زیرتر می‌کند. در شبکهٔ برنامه، رِ کُرُن میان رِ بمل و رِ بکار است و رِ سُری میان رِ بکار و رِ دیز. هر دو را یک بار در کنار رِ بکار و بار دیگر در دل یک جمله بشنوید."
+        ],
+        [
+          "اندازهٔ فاصله",
+          "در فاصلهٔ یک اکتاو، بسامد دو برابر می‌شود. اندازهٔ یک اکتاو ۱۲۰۰ سِنت و اندازهٔ یک نیم‌پرده در کوک معتدل مساوی ۱۰۰ سِنت است. برنامه اکتاو را به ۲۴ گام مساویِ ۵۰ سِنتی تقسیم می‌کند. هر گام روی دایره ۱۵ درجه است و زاویه‌های برابر نمایندهٔ نسبت‌های بسامدی برابرند."
+        ],
+        [
+          "نت‌نویسی پس از انتقال",
+          "با چرخاندن مدل، همهٔ نت‌ها به یک اندازه جابه‌جا می‌شوند. علامت‌های عرضی روی حاملِ کنار دکمهٔ پخش نیز از نو محاسبه می‌شوند. این نت‌نویسی به همین مدل و همین انتقال مربوط است. در یک پارتیتور یا روایت ردیف ممکن است نگارش دیگری یا درجه‌ای متغیر ببینید."
+        ],
+        [
+          "ظرافت کوک در اجرا",
+          "جمله‌ای کوتاه را چند بار بشنوید و صدای یک درجه را در حرکت‌های ملودیک مختلف مقایسه کنید. نوازنده یا خواننده ممکن است متناسب با جمله، آن را اندکی زیرتر یا بم‌تر اجرا کند. دایره به تخمین اندازهٔ فاصله کمک می‌کند؛ برای شنیدن مسیر رسیدن به نت و جدا شدن از آن، به اجرا برگردید."
+        ]
+      ],
+      "links": [
+        [
+          "مرجع کُرُن و سُری",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/reference/microtones-koron-sori.html?lang=fa"
+        ],
+        [
+          "روش محاسبهٔ فواصل و رسم دایره",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/wiki/FA-Scientific-Methodology"
+        ],
+        [
+          "شیوهٔ محاسبهٔ علامت‌های عرضی (انگلیسی)",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/dynamic-persian-notation.md"
+        ]
+      ]
+    }
+  },
+  "tools": {
+    "en": {
+      "title": "A listening guide to the app",
+      "lead": "Choose a scale to hear its intervals, hold a note to check its tuning, or bring a recording to investigate how a melody moves.",
+      "sections": [
+        [
+          "Explore and transpose",
+          "Choose a modal context and play the displayed pitches. Rotate the circle, play again and listen for the interval pattern that stays the same. Open the notation panel to inspect the changed staff spelling, and the notes panel to read the context for shāhed and finalis."
+        ],
+        [
+          "Check a sustained pitch",
+          "Open the chromatic tuner and allow microphone access. Sustain one note and watch the frequency and deviation in cents settle. Use the reference-frequency control if you are tuning against a different A. The reading describes a measured pitch relative to the chosen reference."
+        ],
+        [
+          "Trace a recorded melody",
+          "From the scale explorer, select a file or record a clear phrase. Replay the original beside the synthesized melody and listen for places where tracking follows an overtone or a bass note. The timeline and radial display help locate those moments. Audio decoding and analysis run in the browser."
+        ],
+        [
+          "Read the two recognition results",
+          "The circle ranks scale and tonic candidates using pitch and melodic evidence. The V4 panel compares a recording’s opening with up to three passages and reports which Persian modal labels receive support. Natural Minor has a separate pitch-and-tonic check. If the readings differ, inspect the passage times, hear the cadence and try another candidate. Passage agreement is a count, and the project reports no independent accuracy estimate for passage voting or Natural Minor."
+        ]
+      ],
+      "links": [
+        [
+          "Launch the scale and audio explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ],
+        [
+          "Open the chromatic tuner",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/htmls/tuner.html?lang=en"
+        ],
+        [
+          "Read the illustrated guide",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/htmls/guide.html?lang=en"
+        ],
+        [
+          "Passage recognition and development evaluation",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/experimental/v4_comparison/README.md"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "راهنمای شنیدن با برنامه",
+      "lead": "برای شنیدن فاصله‌ها یک گام انتخاب کنید، برای بررسی کوک یک نت را نگه دارید، یا بخشی از یک اجرا را وارد کنید و مسیر ملودی را دنبال کنید.",
+      "sections": [
+        [
+          "کاوش و انتقال",
+          "یک دستگاه یا آواز را انتخاب کنید و به نت‌های روی دایره گوش دهید. دایره را بچرخانید و دوباره نت‌ها را پخش کنید. چه الگویی از فاصله‌ها ثابت مانده است؟ در بخش نت‌نویسی می‌توانید علامت‌های عرضی تازه را ببینید و در بخش «نقش نت‌ها» دربارهٔ شاهد و نت پایان بخوانید."
+        ],
+        [
+          "اندازه‌گیری یک نت کشیده",
+          "تیونر کروماتیک را باز کنید و به مرورگر اجازهٔ استفاده از میکروفن بدهید. یک نت را پیوسته بنوازید تا عدد بسامد و اختلاف کوک بر حسب سِنت پایدار شود. اگر ساز را با مبنای دیگری کوک کرده‌اید، بسامد مرجع «لا» را تغییر دهید."
+        ],
+        [
+          "دنبال کردن ملودی در یک ضبط",
+          "در کاوشگر، فایل صوتی انتخاب کنید یا جمله‌ای روشن ضبط کنید. صدای اصلی و ملودی بازسازی‌شده را یکی پس از دیگری بشنوید. آیا جایی برنامه به جای خط ملودی، صدای بم یا یکی از هارمونیک‌ها را دنبال کرده است؟ با خط زمان و نمایش شعاعی می‌توانید آن لحظه را پیدا کنید. تحلیل صدا در مرورگر انجام می‌شود."
+        ],
+        [
+          "خواندن دو نتیجهٔ تحلیل",
+          "در دایره، گام‌ها و نت‌های مبنای پیشنهادی با تکیه بر زیر و بمی و مسیر ملودی رتبه‌بندی می‌شوند. بخش «شناسایی مُد» در نسخهٔ چهارم، آغاز ضبط را با حداکثر سه بخش از اجرا می‌سنجد و نشان می‌دهد چند بخش از هر تشخیص پشتیبانی می‌کنند. برای مینور طبیعی آزمون جداگانه‌ای بر پایهٔ فواصل و نت مبنا وجود دارد. اگر نتیجه‌ها متفاوت بودند، به فرود هر بخش گوش کنید و گزینه‌های دیگر را بیازمایید. برای رأی‌گیری میان بخش‌ها و تشخیص مینور طبیعی هنوز برآورد مستقلی از دقت منتشر نشده است."
+        ]
+      ],
+      "links": [
+        [
+          "ورود به کاوشگر گام و تحلیل صدا",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ],
+        [
+          "باز کردن تیونر کروماتیک",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/htmls/tuner.html?lang=fa"
+        ],
+        [
+          "راهنمای تصویری برنامه",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/htmls/guide.html?lang=fa"
+        ],
+        [
+          "روش شناسایی بخش‌های اجرا و ارزیابی مدل (انگلیسی)",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/experimental/v4_comparison/README.md"
+        ]
+      ]
+    }
+  }
+}

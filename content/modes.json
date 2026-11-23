@@ -1,0 +1,730 @@
+{
+  "shur": {
+    "en": {
+      "title": "Shur",
+      "lead": "In many radif traditions, students meet Shur early. Its opening phrases also give listeners a point of reference for related avaz traditions.",
+      "sections": [
+        [
+          "A family heard through its phrases",
+          "Abu Ata, Bayat-e Tork, Afshari and Dashti each develop a distinct melodic identity. Some accounts also give Bayat-e Kord independent standing. Within Shur itself, gushehs such as Salmak and Shahnaz take the listener beyond the opening daramad."
+        ],
+        [
+          "Listen for the return",
+          "Hum a short ending from the daramad. Later in the performance, listen for the same sense of arrival as the melody comes back from a higher register. Which part of your hummed phrase still fits?"
+        ]
+      ],
+      "links": [
+        [
+          "Encyclopaedia Iranica · Shur",
+          "https://www.iranicaonline.org/articles/shur-modal-system/"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "شور",
+      "lead": "در بسیاری از روایت‌های ردیف، هنرجو در آغاز راه با شور آشنا می‌شود. جمله‌های درآمد شور برای شناخت آوازهای وابسته به آن نیز مرجع شنیداری خوبی هستند.",
+      "sections": [
+        [
+          "یک خانواده با بیان‌های گوناگون",
+          "ابوعطا، بیات ترک، افشاری و دشتی هر یک بیان ملودیک ویژه‌ای دارند. در برخی روایت‌ها بیات کرد هم جایگاهی مستقل دارد. در خود شور، گوشه‌هایی مانند سلمک و شهناز دامنهٔ حرکت ملودی را از درآمد فراتر می‌برند."
+        ],
+        [
+          "بازگشت را بشنوید",
+          "پایان یک جمله از درآمد را زمزمه کنید. وقتی ملودی از منطقهٔ صوتی بالاتر بازمی‌گردد، دوباره به حس فرود گوش دهید. کدام بخش از جمله‌ای که زمزمه کردید همچنان به گوش آشناست؟"
+        ]
+      ],
+      "links": [
+        [
+          "دانشنامهٔ ایرانیکا · شور",
+          "https://www.iranicaonline.org/articles/shur-modal-system/"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "nava": {
+    "en": {
+      "title": "Nava",
+      "lead": "Nava has close intervallic ties to Shur and an independent place among the seven principal dastgahs.",
+      "sections": [
+        [
+          "Two ways to read the circle",
+          "In the app, counting the Shur model from its fourth degree reproduces the interval order shown for Nava. A performer establishes Nava through the daramad and the unfolding repertory. The app treats its opening note-role markers as provisional."
+        ],
+        [
+          "Compare two openings",
+          "Listen to a labelled daramad of Nava and one of Shur. Hum the first phrase you remember from each, then compare how each reaches a point of rest. Give the melodic differences a name before consulting the circle."
+        ]
+      ],
+      "links": [
+        [
+          "Farhat’s chapter on Nava",
+          "https://www.cambridge.org/core/books/abs/dastgah-concept-in-persian-music/dastgahe-nava/00E821304F2E6E3FEBF001D5C03DC0CF"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "نوا",
+      "lead": "فاصله‌های نوا با شور خویشاوندی دارند و نوا در میان هفت دستگاه اصلی جایگاه مستقلی دارد.",
+      "sections": [
+        [
+          "دو خوانش از دایره",
+          "در الگوی برنامه، اگر ترتیب فاصله‌های شور را از درجهٔ چهارم بخوانید، به ترتیب فاصله‌های نوا می‌رسید. در اجرا، درآمد و سیر گوشه‌ها هویت نوا را آشکار می‌کنند. تعیین نقش نت‌های درآمد نوا در برنامه هنوز قطعی نیست."
+        ],
+        [
+          "دو درآمد را مقایسه کنید",
+          "به دو اجرای مشخص از درآمد نوا و درآمد شور گوش دهید. از هر کدام یک جمله را زمزمه کنید و بشنوید که ملودی چگونه به محل مکث می‌رسد. پیش از نگاه کردن به دایره، تفاوت دو جمله را با واژه‌های خود توصیف کنید."
+        ]
+      ],
+      "links": [
+        [
+          "فصل نوا از کتاب هرمز فرهت",
+          "https://www.cambridge.org/core/books/abs/dastgah-concept-in-persian-music/dastgahe-nava/00E821304F2E6E3FEBF001D5C03DC0CF"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "segah": {
+    "en": {
+      "title": "Segah",
+      "lead": "The daramad of Segah offers a clear way to hear the difference between a diagram’s starting position and the pitch around which a melody turns.",
+      "sections": [
+        [
+          "Finding the focal pitch",
+          "In the project’s C-based diagram, E-koron occupies the third position. Its introductory model identifies this pitch as both shahed, the focal note, and finalis, the note of conclusion. After transposition, those functions move together."
+        ],
+        [
+          "Try a held note",
+          "In a recording of the daramad, find a note you can sustain while the melody moves away and comes back. Check it against the ends of several phrases. An ornament may briefly touch that note without giving a sense of closure."
+        ]
+      ],
+      "links": [
+        [
+          "Farhat’s chapter on Segah",
+          "https://www.cambridge.org/core/books/abs/dastgah-concept-in-persian-music/dastgahe-segah/286972DE9598352B7AC796100442DB14"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "سه‌گاه",
+      "lead": "درآمد سه‌گاه نمونهٔ روشنی برای شنیدن تفاوت میان نقطهٔ آغاز نمودار و نتی است که ملودی گرد آن می‌گردد.",
+      "sections": [
+        [
+          "نت محوری کجاست؟",
+          "در نموداری که از دو آغاز می‌شود، می‌کرن در جایگاه سوم قرار می‌گیرد. در الگوی درآمد سه‌گاه در برنامه، همین نت هم شاهد است و هم نت پایان. با انتقال الگو، هر دو نقش به نت تازه منتقل می‌شوند."
+        ],
+        [
+          "یک نت را نگه دارید",
+          "در اجرایی از درآمد، نتی پیدا کنید که بتوانید آن را زمزمه کرده و نگه دارید و هم‌زمان دور شدن و بازگشت ملودی را بشنوید. آن را با پایان چند جمله بسنجید. گذر زینتی از این نت همیشه حس پایان ایجاد نمی‌کند."
+        ]
+      ],
+      "links": [
+        [
+          "فصل سه‌گاه از کتاب هرمز فرهت",
+          "https://www.cambridge.org/core/books/abs/dastgah-concept-in-persian-music/dastgahe-segah/286972DE9598352B7AC796100442DB14"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "chahargah": {
+    "en": {
+      "title": "Chahargah",
+      "lead": "Chahargah names both a principal dastgah and the opening modal setting to which its performance can return.",
+      "sections": [
+        [
+          "Following a longer performance",
+          "Zabol, Hesar and Mokhalef take the melody through different modal settings. A forud can reconnect the listener with the opening. An interval diagram of the daramad captures only the starting point of this journey."
+        ],
+        [
+          "Listen across a transition",
+          "Choose a recording with named tracks for daramad and Mokhalef. Sing the end of a phrase from each. In the passage back to Chahargah, listen for the moment when the opening sounds familiar again."
+        ]
+      ],
+      "links": [
+        [
+          "Encyclopaedia Iranica · Chahargah",
+          "https://www.iranicaonline.org/articles/cahargah/"
+        ],
+        [
+          "Jean During on the dastgah",
+          "https://www.iranicaonline.org/articles/dastgah/"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "چهارگاه",
+      "lead": "چهارگاه هم نام یکی از دستگاه‌های اصلی است و هم نام مایه‌ای که در درآمد می‌شنویم و اجرا می‌تواند به آن بازگردد.",
+      "sections": [
+        [
+          "سیر یک اجرای مفصل",
+          "زابل، حصار و مخالف، ملودی را به فضاهای گوناگون می‌برند. فرود می‌تواند فضای آغازین چهارگاه را دوباره به یاد شنونده بیاورد. نمودار فاصله‌های درآمد فقط نقطهٔ آغاز این سیر را نشان می‌دهد."
+        ],
+        [
+          "گذر از یک گوشه به گوشهٔ دیگر",
+          "اجرایی انتخاب کنید که درآمد و مخالف در آن مشخص باشند. پایان یک جمله از هر کدام را بخوانید. هنگام بازگشت به چهارگاه، به لحظه‌ای توجه کنید که مایهٔ آغازین دوباره برایتان آشنا می‌شود."
+        ]
+      ],
+      "links": [
+        [
+          "دانشنامهٔ ایرانیکا · چهارگاه",
+          "https://www.iranicaonline.org/articles/cahargah/"
+        ],
+        [
+          "ژان دورینگ دربارهٔ دستگاه",
+          "https://www.iranicaonline.org/articles/dastgah/"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "homayoun": {
+    "en": {
+      "title": "Homayoun",
+      "lead": "Homayoun brings the difference between melodic emphasis and final repose into focus. Its opening and its later gushehs give these functions different settings.",
+      "sections": [
+        [
+          "From daramad to Bidad",
+          "In the project’s opening model, the second degree is the shahed and the first is the finalis. Follow a radif performance into Chakavak, Bidad or Shushtari to hear how far the melody can travel from its introductory setting."
+        ],
+        [
+          "A listening pair",
+          "Mark one note that the opening dwells on, then hum the note on which the passage comes to rest. Compare the two before listening to Bidad. Does the same note still draw your attention?"
+        ]
+      ],
+      "links": [
+        [
+          "Encyclopaedia Iranica · Homayoun",
+          "https://www.iranicaonline.org/articles/homayun/"
+        ],
+        [
+          "Esfahan and its repertory",
+          "https://www.iranicaonline.org/articles/bayat-e-esfahan/"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "همایون",
+      "lead": "در همایون تفاوت میان نتی که ملودی بر آن تأکید می‌کند و نتی که در پایان بر آن آرام می‌گیرد به‌خوبی شنیده می‌شود.",
+      "sections": [
+        [
+          "از درآمد تا بیداد",
+          "در الگوی درآمد همایون در برنامه، درجهٔ دوم شاهد و درجهٔ اول نت پایان است. در اجرای ردیف، حرکت از درآمد به چکاوک، بیداد یا شوشتری را دنبال کنید تا گسترهٔ گردش ملودی را بشنوید."
+        ],
+        [
+          "دو نت را به خاطر بسپارید",
+          "در درآمد، نتی را که ملودی پیرامونش می‌گردد پیدا کنید. سپس نت پایان را زمزمه کنید. این دو را به خاطر بسپارید و به بیداد گوش دهید. آیا هنوز همان نت توجه شما را جلب می‌کند؟"
+        ]
+      ],
+      "links": [
+        [
+          "دانشنامهٔ ایرانیکا · همایون",
+          "https://www.iranicaonline.org/articles/homayun/"
+        ],
+        [
+          "بیات اصفهان و گوشه‌هایش",
+          "https://www.iranicaonline.org/articles/bayat-e-esfahan/"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "esfahan": {
+    "en": {
+      "title": "Bayat-e Esfahan",
+      "lead": "Often taught alongside Homayoun, Bayat-e Esfahan has an independent performance repertory. Accounts differ on how to explain its relationship to Homayoun.",
+      "sections": [
+        [
+          "Travelling into the upper register",
+          "The daramad introduces Esfahan’s melodic setting. In Margaret Caton’s account, Shahkhatai reaches a higher register and closes with a cadence back into Esfahan. Other named gushehs include Jamadaran and Oshshaq."
+        ],
+        [
+          "Hear a cadence in context",
+          "Listen to the ending of a gusheh and then to its last note alone. Which turns of the melody made the full ending recognizable? Written descriptions of Esfahan also document changes in intonation and cadences over time."
+        ]
+      ],
+      "links": [
+        [
+          "Encyclopaedia Iranica · Bayat-e Esfahan",
+          "https://www.iranicaonline.org/articles/bayat-e-esfahan/"
+        ],
+        [
+          "Homayoun and the relationship with Esfahan",
+          "https://www.iranicaonline.org/articles/homayun/"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "بیات اصفهان",
+      "lead": "بیات اصفهان را اغلب در پیوند با همایون آموزش می‌دهند و رپرتوار اجرایی مستقلی دارد. دربارهٔ چگونگی نسبت آن با همایون دیدگاه‌های متفاوتی وجود دارد.",
+      "sections": [
+        [
+          "حرکت به سوی اوج",
+          "درآمد، فضای ملودیک اصفهان را معرفی می‌کند. در توصیف مارگارت کاتن، شاه‌ختایی به منطقهٔ صوتی بالاتر می‌رسد و سرانجام به اصفهان فرود می‌آید. جامه‌دران و عشاق نیز از گوشه‌های این آوازند."
+        ],
+        [
+          "فرود را در دل جمله بشنوید",
+          "به پایان یک گوشه گوش دهید و سپس تنها آخرین نت را بخوانید. کدام گردش‌های ملودی، فرود کامل را برایتان آشنا کردند؟ در منابع، از تغییر فاصله‌ها و شیوهٔ پایان‌بندی اصفهان در دوره‌های مختلف نیز سخن رفته است."
+        ]
+      ],
+      "links": [
+        [
+          "دانشنامهٔ ایرانیکا · بیات اصفهان",
+          "https://www.iranicaonline.org/articles/bayat-e-esfahan/"
+        ],
+        [
+          "همایون و پیوند آن با اصفهان",
+          "https://www.iranicaonline.org/articles/homayun/"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "mahur": {
+    "en": {
+      "title": "Mahur",
+      "lead": "The pitches of the opening model may sound familiar to a listener who knows the Western major scale. Mahur’s gushehs offer a different way to organize them in time.",
+      "sections": [
+        [
+          "Beyond the opening collection",
+          "Dad and Goshayesh draw attention to the second degree. Delkash brings a relationship with Shur into the repertory of Mahur. These changes help explain why an ascending run supplies so little information about where a performance has gone."
+        ],
+        [
+          "Follow one point of emphasis",
+          "After listening to the daramad, continue into Dad or Goshayesh. Hum the pitch that now seems prominent, then return to the opening. How does its melodic weight change?"
+        ]
+      ],
+      "links": [
+        [
+          "Farhat’s chapter on Mahur",
+          "https://www.cambridge.org/core/books/abs/dastgah-concept-in-persian-music/dastgahe-mahur/74BB87E52B8BE80C157F17956662CF12"
+        ],
+        [
+          "The Delkash gusheh",
+          "https://www.iranicaonline.org/articles/delkas-2/"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "ماهور",
+      "lead": "نت‌های الگوی آغازین ماهور ممکن است برای شنوندهٔ آشنا با گام ماژور نیز آشنا باشند. گوشه‌های ماهور نشان می‌دهند که همین نت‌ها چگونه در طول اجرا سامان می‌گیرند.",
+      "sections": [
+        [
+          "پس از درآمد",
+          "در داد و گشایش، درجهٔ دوم برجسته می‌شود. در دلکش نیز پیوندی با فضای شور می‌شنویم. خواندن نت‌ها به ترتیب صعودی تنها بخش کوچکی از این سیر را بازگو می‌کند."
+        ],
+        [
+          "تأکید را دنبال کنید",
+          "پس از شنیدن درآمد، به داد یا گشایش گوش دهید. نتی را که حالا برجسته به گوش می‌رسد زمزمه کنید و به درآمد بازگردید. اهمیت آن نت در جمله چگونه تغییر می‌کند؟"
+        ]
+      ],
+      "links": [
+        [
+          "فصل ماهور از کتاب هرمز فرهت",
+          "https://www.cambridge.org/core/books/abs/dastgah-concept-in-persian-music/dastgahe-mahur/74BB87E52B8BE80C157F17956662CF12"
+        ],
+        [
+          "گوشهٔ دلکش",
+          "https://www.iranicaonline.org/articles/delkas-2/"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "rast-panjgah": {
+    "en": {
+      "title": "Rast Panjgah",
+      "lead": "Rast Panjgah and Mahur share a pitch collection in the explorer. Each has its own entry so that their repertories and melodic identities can be studied separately.",
+      "sections": [
+        [
+          "Rast and Panjgah",
+          "The opening Rast context and the later gusheh called Panjgah are separate points in the repertory. The role markers for the opening remain provisional. Comparing pitch-class counts alone cannot settle an identification between this model and Mahur."
+        ],
+        [
+          "Compare two phrases",
+          "Choose labelled daramad recordings of Rast Panjgah and Mahur. Sing a short ending from each, keeping its timing and ornaments. In the analyser you can select Rast Panjgah manually when comparing interpretations."
+        ]
+      ],
+      "links": [
+        [
+          "Farhat’s chapter on Rast Panjgah",
+          "https://www.cambridge.org/core/books/abs/dastgah-concept-in-persian-music/dastgahe-rast-rastpanjgah/2202DB3D83D96A6B7707D62C071EC0C6"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "راست‌پنجگاه",
+      "lead": "راست‌پنجگاه و ماهور در برنامه مجموعه‌نت یکسانی دارند. هر کدام مدخلی جداگانه دارد تا بتوان گوشه‌ها و ویژگی‌های ملودیکشان را مستقل از هم بررسی کرد.",
+      "sections": [
+        [
+          "راست و پنجگاه",
+          "فضای «راست» در آغاز دستگاه و گوشهٔ «پنجگاه» که در ادامه می‌آید دو جایگاه جداگانه در ردیف دارند. تعیین نقش نت‌های درآمد در برنامه هنوز قطعی نیست. شمارش بسامد حضور نت‌ها به‌تنهایی برای تشخیص این دستگاه از ماهور کافی نیست."
+        ],
+        [
+          "دو جمله را مقایسه کنید",
+          "دو اجرای مشخص از درآمد راست‌پنجگاه و ماهور انتخاب کنید. پایان یک جمله از هر اجرا را با حفظ کشش‌ها و تزیین‌ها بخوانید. برای مقایسهٔ برداشت‌ها می‌توانید در تحلیل‌گر برنامه راست‌پنجگاه را دستی انتخاب کنید."
+        ]
+      ],
+      "links": [
+        [
+          "فصل راست‌پنجگاه از کتاب هرمز فرهت",
+          "https://www.cambridge.org/core/books/abs/dastgah-concept-in-persian-music/dastgahe-rast-rastpanjgah/2202DB3D83D96A6B7707D62C071EC0C6"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "abu-ata": {
+    "en": {
+      "title": "Abu Ata",
+      "lead": "In Abu Ata, three distinct kinds of melodic arrival can be heard within a pitch collection shared with Shur.",
+      "sections": [
+        [
+          "Emphasis, pause and conclusion",
+          "In Gen’ichi Tsuge’s example on G, C receives sustained emphasis, A-koron provides a temporary stopping place, and G closes the mode. The gusheh Hejaz shifts the focus again. These functions survive a change of starting pitch."
+        ],
+        [
+          "Three listening passes",
+          "On the first pass, hum the note the daramad keeps circling. On the second, mark brief pauses. On the third, wait for a full conclusion. Can you hear all three functions in the excerpt?"
+        ]
+      ],
+      "links": [
+        [
+          "Encyclopaedia Iranica · Abu Ata",
+          "https://www.iranicaonline.org/articles/abu-ata/"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "ابوعطا",
+      "lead": "در ابوعطا می‌توان با همان مجموعه‌نتی که در شور می‌شنویم، سه نقش متفاوت را تشخیص داد: تأکید، مکث و پایان.",
+      "sections": [
+        [
+          "شاهد، ایست و نت پایان",
+          "در نمونه‌ای که گن‌ایچی تسوگه بر مبنای سل شرح می‌دهد، نت «دو» شاهد است، «لاکرن» محل ایست موقت است و آواز بر «سل» پایان می‌گیرد. با ورود به گوشهٔ حجاز، کانون توجه دوباره تغییر می‌کند. با انتقال آواز، نسبت این نقش‌ها حفظ می‌شود."
+        ],
+        [
+          "سه بار گوش دهید",
+          "بار اول نتی را که درآمد پیرامونش می‌گردد زمزمه کنید. بار دوم مکث‌های کوتاه را پیدا کنید. بار سوم منتظر فرود پایانی بمانید. آیا هر سه نقش را در نمونه‌ای که انتخاب کرده‌اید می‌شنوید؟"
+        ]
+      ],
+      "links": [
+        [
+          "دانشنامهٔ ایرانیکا · ابوعطا",
+          "https://www.iranicaonline.org/articles/abu-ata/"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "bayat-e-tork": {
+    "en": {
+      "title": "Bayat-e Tork",
+      "lead": "Also known as Bayat-e Zand, this Shur-related avaz sustains a characteristic focal pitch across much of its melodic movement.",
+      "sections": [
+        [
+          "One focal pitch, several endings",
+          "In Margaret Caton’s account, the shahed remains prominent across the repertory, but it need not determine every ending. In the app’s reference panel the finalis is left open. Numbered degrees in different accounts also depend on where the writer begins counting."
+        ],
+        [
+          "Follow the shahed",
+          "Hum the focal pitch while listening to the daramad. When the melody pauses, compare its stopping note with yours. Repeat with another gusheh, such as Qatar or Jamadaran."
+        ]
+      ],
+      "links": [
+        [
+          "Encyclopaedia Iranica · Bayat-e Tork",
+          "https://www.iranicaonline.org/articles/bayat-e-tork/"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "بیات ترک",
+      "lead": "این آواز که بیات زند نیز خوانده می‌شود از آوازهای وابسته به شور است. در بخش بزرگی از گردش ملودی، یک نت شاهد برجسته می‌ماند.",
+      "sections": [
+        [
+          "یک شاهد و پایان‌های گوناگون",
+          "در توصیف مارگارت کاتن، شاهد در سراسر آواز اهمیت دارد، اما پایان همهٔ جمله‌ها را تعیین نمی‌کند. در توضیحات برنامه نیز نت پایان ثابتی برای بیات ترک تعیین نشده است. شمارهٔ درجه در نوشته‌های مختلف به مبدأ شمارش نویسنده بستگی دارد."
+        ],
+        [
+          "شاهد را دنبال کنید",
+          "هنگام شنیدن درآمد، نت شاهد را زمزمه کنید. هر بار که ملودی مکث می‌کند، نت محل مکث را با نت خود مقایسه کنید. این تمرین را با گوشه‌ای دیگر، مثلاً قطار یا جامه‌دران، تکرار کنید."
+        ]
+      ],
+      "links": [
+        [
+          "دانشنامهٔ ایرانیکا · بیات ترک",
+          "https://www.iranicaonline.org/articles/bayat-e-tork/"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "afshari": {
+    "en": {
+      "title": "Afshari",
+      "lead": "Afshari belongs to the Shur family. The difference between a recurring pause and the final close is especially audible in its daramad.",
+      "sections": [
+        [
+          "A place to pause",
+          "Hormoz Farhat’s example emphasizes G while many phrases settle temporarily on E-koron. He also describes a pitch whose height changes with melodic direction. The app’s shared Shur diagram leaves some of these performed inflections outside its seven displayed pitches."
+        ],
+        [
+          "Listen through the silence",
+          "Stop a recording just after a pause and sing what you expect to follow. Resume playback. Does the pause invite continuation, or does it sound like the end of the whole passage?"
+        ]
+      ],
+      "links": [
+        [
+          "Encyclopaedia Iranica · Afshari",
+          "https://www.iranicaonline.org/articles/afsari/"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "افشاری",
+      "lead": "افشاری از آوازهای خانوادهٔ شور است. در درآمد آن می‌توان تفاوت میان مکثی که بارها برمی‌گردد و فرود پایانی را به‌روشنی شنید.",
+      "sections": [
+        [
+          "جایی برای مکث",
+          "در نمونهٔ هرمز فرهت، سل شاهد است و بسیاری از جمله‌ها بر می‌کرن ایست موقت دارند. او همچنین نتی متغیر را شرح می‌دهد که با جهت حرکت ملودی تغییر می‌کند. برخی از این ظرافت‌های اجرایی در هفت نت نمودار مشترک شور جا نمی‌گیرند."
+        ],
+        [
+          "پس از سکوت چه می‌آید؟",
+          "پخش را درست پس از یک مکث نگه دارید و ادامه‌ای را که انتظار دارید بخوانید. سپس اجرا را ادامه دهید. آیا مکث شما را منتظر ادامه گذاشت یا حس پایان کل بخش را داشت؟"
+        ]
+      ],
+      "links": [
+        [
+          "دانشنامهٔ ایرانیکا · افشاری",
+          "https://www.iranicaonline.org/articles/afsari/"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  },
+  "dashti": {
+    "en": {
+      "title": "Dashti",
+      "lead": "Dashti draws on Shur while giving its own character to the upper part of the melodic range. A variable pitch makes the direction of a phrase worth hearing closely.",
+      "sections": [
+        [
+          "A pitch in motion",
+          "In written accounts of Dashti the same scale degree can take different inflections as a phrase unfolds. The explorer’s Shur-family circle keeps its positions fixed. The modal-role notes identify the limits of the Dashti mapping and mark it as provisional."
+        ],
+        [
+          "Trace the contour",
+          "Find a phrase that rises to a sustained pitch and returns. Sing its ascent and descent separately. Listen for fine changes in pitch level on the return, and compare them with another performer’s rendering."
+        ]
+      ],
+      "links": [
+        [
+          "Encyclopaedia Iranica · Dashti",
+          "https://www.iranicaonline.org/articles/dasti-one-of-the-twelve-modal-systems/"
+        ],
+        [
+          "Project notes on modal roles",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "Open the scale explorer",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=en"
+        ]
+      ]
+    },
+    "fa": {
+      "title": "دشتی",
+      "lead": "دشتی از خانوادهٔ شور است و در بخش بالاتر گسترهٔ ملودی بیان ویژهٔ خود را پیدا می‌کند. وجود نت متغیر، شنیدن جهت حرکت جمله را اهمیت می‌بخشد.",
+      "sections": [
+        [
+          "نت در مسیر ملودی",
+          "در توصیف‌های دشتی، یک درجه می‌تواند در طول جمله با زیرایی‌های متفاوت شنیده شود. جای نت‌ها روی دایرهٔ خانوادهٔ شور ثابت است. در یادداشت‌های برنامه، تعیین نقش نت‌های دشتی موقت دانسته شده و محدودیت‌های آن توضیح داده شده است."
+        ],
+        [
+          "مسیر جمله را بخوانید",
+          "جمله‌ای پیدا کنید که بالا می‌رود، روی نتی می‌ماند و بازمی‌گردد. مسیر بالارونده و پایین‌رونده را جداگانه زمزمه کنید. در بازگشت به تغییر ظریف زیرایی گوش دهید و آن را با اجرای نوازنده یا خوانندهٔ دیگری بسنجید."
+        ]
+      ],
+      "links": [
+        [
+          "دانشنامهٔ ایرانیکا · دشتی",
+          "https://www.iranicaonline.org/articles/dasti-one-of-the-twelve-modal-systems/"
+        ],
+        [
+          "پژوهش پروژه دربارهٔ نقش نت‌ها",
+          "https://github.com/PersianMusicScales/Persian-Music-Scales-App/blob/main/docs/modal-roles-research.md"
+        ],
+        [
+          "ورود به برنامهٔ تعاملی",
+          "https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang=fa"
+        ]
+      ]
+    }
+  }
+}

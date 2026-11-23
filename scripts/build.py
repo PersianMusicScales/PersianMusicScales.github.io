@@ -51,12 +51,30 @@ def page(k,l,root=False):
         return '<div class="cards">'+''.join(f'<a href="{loc(j)}"><span class="glyph" aria-hidden="true">{g}</span><h3>{escape(P[j][l]["title"])}</h3><p>{escape(P[j][l]["lead"])}</p></a>' for j,g in items)+'</div>'
     def index():
         return '<div class="filter" hidden><label for="filter">'+T('Find a mode','جست‌وجوی دستگاه یا آواز')+'</label><input id="filter" type="search"></div><p id="empty" hidden>'+T('No matching entry.','مدخلی پیدا نشد.')+'</p>'+''.join('<section><h2>'+t+'</h2><div class="modes">'+''.join(f'<a data-search="{escape(P[j]["fa"]["title"]+" "+P[j]["en"]["title"]+" "+j)}" href="{loc(j)}"><strong>{escape(P[j][l]["title"])}</strong><span lang="{alt}">{escape(P[j][alt]["title"])}</span></a>' for j in keys)+'</div></section>' for t,keys in [(T('Dastgah','دستگاه‌ها'),MODES[:7]),(T('Avaz','آوازها'),MODES[7:])])
+    def app_gallery():
+        shots = [
+            ('shur', T('Shur', 'شور'), T('Shur on C, with the pitch circle and playback controls.', 'دایرهٔ فواصل شور روی دو، همراه با کنترل‌های پخش.')),
+            ('bayat-tork-new', T('Bayat-e Tork', 'بیات ترک'), T('A highlighted pitch on the Bayat-e Tork wheel.', 'نمایش یک نت روی دایرهٔ بیات ترک.')),
+            ('scale-notes', T('Modal notes', 'نقش نت‌ها'), T('The modal-role notes and sources for Bayat-e Tork.', 'توضیح نقش نت‌ها و منابع بیات ترک.')),
+            ('track-analyzer-new', T('Analyzer', 'تحلیل‌گر'), T('Recording and analysis settings in the track analyzer.', 'گزینه‌های ضبط و تحلیل در بخش تحلیل‌گر قطعه.')),
+        ]
+        views = []
+        for i,(file,label,caption) in enumerate(shots):
+            selected = ' checked' if i == 0 else ''
+            views.append(f'<input type="radio" name="screen" id="screen-{i}"{selected}><label for="screen-{i}">{label}</label><figure><a href="{up}assets/{file}.webp"><img loading="lazy" width="490" height="1000" src="{up}assets/{file}.webp" alt="{caption}"></a><figcaption>{caption}</figcaption></figure>')
+        return '<fieldset class="app-gallery"><legend>'+T('App screenshots','تصویرهای برنامه')+'</legend>'+''.join(views)+'</fieldset>'
+    def atlas_preview():
+        description=T('The Atlas maps historical fret divisions onto a modern four-string setar.', 'در اطلس، تقسیمات تاریخی دستان روی سه‌تار چهار‌سیم امروزی نمایش داده شده‌اند.')
+        return f'<figure class="instrument"><a href="{ATLAS}?lang={l}&amp;panel=explore"><img src="{up}assets/atlas-combined.webp" width="1361" height="414" alt="{description}" loading="lazy"></a><figcaption>{description}</figcaption></figure>'
     if k=='home':
         main=f'<section class="hero"><div class="herocopy"><div class="eyebrow">{T("PERSIAN CLASSICAL MUSIC","موسیقی دستگاهی ایران")}</div><h1>{T("Persian Music <em>Scales</em>","گام‌های <em>موسیقی ایرانی</em>")}</h1><p>{escape(p["lead"])}</p><div class="buttons">{il("modes",T("Explore the modes","آشنایی با دستگاه‌ها"),"primary")}{link(APP+l,T("Launch interactive app","ورود به برنامه"),"secondary")}</div></div>{plate()}</section><section class="paths"><div class="eyebrow">{T("FIELD GUIDE","راهنمای مطالعه")}</div><h2>{T("Ways to explore","مسیرهای مطالعه")}</h2>{cards([("theory","♩"),("tools","∿"),("history","⌁")])}</section>'
-        main+=f'<section class="atlasfeature"><div><div class="eyebrow">{T("HISTORICAL MUSIC THEORY","نظریهٔ تاریخی موسیقی")}</div><h2>{T("One string, two ratios","یک سیم، دو نسبت")}</h2><p>{T("Halve the sounding length of a string and its frequency doubles. Follow that relationship from a monochord to the interval cycles of Ṣafī al-Dīn al-Urmawī.","طول بخش مرتعش سیم را نصف کنید تا بسامد آن دو برابر شود. این رابطه را از تقسیم سیم تا دورهای صفی‌الدین ارموی دنبال کنید.")}</p>{il("history",T("Read the historical guide","مطالعهٔ راهنمای تاریخی"),"secondary")} {link(ATLAS+"?lang="+l,T("Open the Advar Atlas","ورود به اطلس ادوار"),"primary")}</div><figure dir="ltr"><div class="string"><i></i></div><b>1 : 1</b><div class="string half"><i></i></div><b>1 : 2</b><figcaption>{T("Relative sounding length at constant tension and linear density.","طول نسبی بخش مرتعش سیم در کشش و چگالی خطی ثابت.")}</figcaption></figure></section>'
+        main+=f'<section class="project-show app-show"><div><div class="eyebrow">{T("INTERACTIVE APPLICATION","برنامهٔ تعاملی")}</div><h2>{brand}</h2><p>{T("Listen to a mode, transpose its pitch circle, or follow a recorded melody. Select a screenshot to see how each tool works.","یک دستگاه یا آواز را بشنوید، دایرهٔ فواصل آن را انتقال دهید یا مسیر ملودی ضبط‌شده را دنبال کنید. برای دیدن بخش‌های مختلف برنامه، یکی از تصویرها را انتخاب کنید.")}</p><div class="buttons">{link(APP+l,T("Open the app","ورود به برنامه"),"primary")}{il("tools",T("Read the app guide","راهنمای برنامه"),"secondary")}</div></div>{app_gallery()}</section>'
+        main+=f'<section class="project-show atlas-show"><div class="eyebrow">{T("HISTORICAL MUSIC THEORY","نظریهٔ تاریخی موسیقی")}</div><h2>{T("Al-Urmawī Advar Atlas","اطلس ادوار صفی‌الدین ارموی")}</h2><p>{T("Explore the fret divisions in the Book of Cycles. Move along the string in the Atlas to hear how a change in sounding length changes the interval.","تقسیم دستان در کتاب الادوار را بررسی کنید. در اطلس روی سیم حرکت کنید و بشنوید که با تغییر طول بخش مرتعش سیم، فاصلهٔ موسیقایی چگونه تغییر می‌کند.")}</p><div class="buttons">{link(ATLAS+"?lang="+l,T("Open the Atlas","ورود به اطلس"),"primary")}{il("history",T("Read the historical guide","راهنمای تاریخی"),"secondary")}</div>{atlas_preview()}</section>'
     else:
         bread=il('home',brand)+' / '+(il('modes',T('Modes','دستگاه‌ها'))+' / ' if k in MODES else '')+escape(p['title'])
         main=f'<div class="crumb">{bread}</div><article><div class="eyebrow">{brand}</div><h1>{escape(p["title"])}</h1><p class="lead">{escape(p["lead"])}</p>'
+        if k=='tools':main+=app_gallery()
+        if k=='history':main+=atlas_preview()
         if k=='modes':main+=index()
         if k=='notation':main+=plate()
         main+='<div class="prose">'+''.join(f'<section><h2>{escape(h)}</h2><p>{escape(v)}</p></section>' for h,v in p.get('sections',[]))+'</div>'
@@ -77,13 +95,16 @@ def page(k,l,root=False):
     alts=''.join(f'<link rel="alternate" hreflang="{a}" href="{BASE}/{route(k,a)}">' for a in ['en','fa'])
     structured=json.dumps({'@context':'https://schema.org','@type':'WebPage','name':p['title'],'inLanguage':l,'url':BASE+'/'+path},ensure_ascii=False)
     noindex='<meta name="robots" content="noindex,nofollow">' if PREVIEW else ''
-    return f'''<!doctype html><html lang="{l}" dir="{T("ltr","rtl")}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">{noindex}<title>{title}</title><meta name="description" content="{meta}"><link rel="canonical" href="{BASE}/{path}">{alts}<link rel="alternate" hreflang="x-default" href="{BASE}/{route(k,"en")}"><meta property="og:title" content="{title}"><meta property="og:description" content="{meta}"><meta property="og:type" content="website"><meta property="og:url" content="{BASE}/{path}"><meta property="og:image" content="{BASE}/assets/share.png"><link rel="icon" href="{up}assets/icon.svg"><link rel="stylesheet" href="{up}assets/style.css"><script src="{up}assets/theme.js"></script><script src="{up}assets/ui.js" defer></script><script type="application/ld+json">{structured}</script></head><body><a class="skip" href="#content">{T("Skip to content","رفتن به محتوا")}</a>{header}<main id="content">{main}</main>{footer}</body></html>'''
+    verification='<meta name="google-site-verification" content="bar9iVDKejX30uUGMR7PgldOZCrXmeHWHFh6p5Cgv7w">' if k=='home' and not PREVIEW else ''
+    return f'''<!doctype html><html lang="{l}" dir="{T("ltr","rtl")}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">{noindex}{verification}<title>{title}</title><meta name="description" content="{meta}"><link rel="canonical" href="{BASE}/{path}">{alts}<link rel="alternate" hreflang="x-default" href="{BASE}/{route(k,"en")}"><meta property="og:title" content="{title}"><meta property="og:description" content="{meta}"><meta property="og:type" content="website"><meta property="og:url" content="{BASE}/{path}"><meta property="og:image" content="{BASE}/assets/share.png"><link rel="icon" href="{up}assets/icon.svg"><link rel="stylesheet" href="{up}assets/style.css"><script src="{up}assets/theme.js"></script><script src="{up}assets/ui.js" defer></script><script type="application/ld+json">{structured}</script></head><body><a class="skip" href="#content">{T("Skip to content","رفتن به محتوا")}</a>{header}<main id="content">{main}</main>{footer}</body></html>'''
 for k in P:
     for lang in ['en','fa']:
         write(route(k,lang)+'index.html',page(k,lang))
 write('index.html',page('home','en',True))
 write('assets/icon.svg',logo().replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" color="#699b8b" '))
 write('.nojekyll','')
+verification_file = 'googled2e5da6be79bd23d.html'
+(O/'assets'/verification_file).replace(O/verification_file)
 s=ET.Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
 for k in P:
     for l in ['en','fa']:ET.SubElement(ET.SubElement(s,'url'),'loc').text=BASE+'/'+route(k,l)

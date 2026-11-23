@@ -54,13 +54,29 @@ def page(k,l,root=False):
         def entry(j):
             other=P[j][alt]['title']
             search=escape(' '.join([P[j]['en']['title'],P[j]['fa']['title'],j]),quote=True)
-            return f'<a data-search="{search}" href="{loc(j)}"><strong>{escape(P[j][l]["title"])}</strong><span lang="{alt}">{escape(other)}</span></a>'
-        families=[('shur',MODES[8:]),('homayoun',['esfahan'])]
-        out=f'<div class="filter" hidden><label for="filter">{T("Find a mode","جست‌وجوی دستگاه یا آواز")}</label><input id="filter" type="search"></div><p id="empty" hidden>{T("No matching entry.","مدخلی پیدا نشد.")}</p>'
-        for parent,children in families:
-            out+=f'<section class="family"><h2>{T("The "+P[parent]["en"]["title"]+" family","خانوادهٔ "+P[parent]["fa"]["title"])}</h2><div class="kin"><div><h3>{T("Dastgāh","دستگاه")}</h3><div class="modes">{entry(parent)}</div></div><div><h3>{T("Related āvāz","آوازهای وابسته") if len(children)>1 else T("Related āvāz","آواز وابسته")}</h3><div class="modes">{"".join(entry(j) for j in children)}</div></div></div></section>'
-        others=[j for j in MODES[:7] if j not in ('shur','homayoun')]
-        return out+f'<section class="family"><h2>{T("Other dastgāhs in this guide","دیگر دستگاه‌ها در این راهنما")}</h2><div class="modes">{"".join(entry(j) for j in others)}</div></section>'
+            return f'<a data-search="{search}" href="{loc(j)}"><strong>{escape(P[j][l]["title"])}</strong><span lang="{alt}">{escape(other)}</span><p>{escape(P[j][l]["lead"])}</p></a>'
+        out=f'<div class="filter" hidden><label for="filter">{T("Find an entry","جست‌وجوی مدخل")}</label><input id="filter" type="search"></div><p id="empty" hidden>{T("No matching entry.","مدخلی پیدا نشد.")}</p>'
+        groups=[(T('Dastgāhs','دستگاه‌ها'),MODES[:7]),(T('Āvāzes associated with Shur','آوازهای وابسته به شور'),MODES[8:]),(T('Āvāz associated with Homāyun','آواز وابسته به همایون'),['esfahan'])]
+        for name,items in groups:
+            out+=f'<section class="family"><h2>{name}</h2><div class="modes">{"".join(entry(j) for j in items)}</div></section>'
+        return out
+    def modal_profile():
+        profile=P[k]['profile']
+        def number(n):
+            if n is None:return T('Unassigned','تعیین نشده')
+            digits=str(n)
+            return digits.translate(str.maketrans('0123456789','۰۱۲۳۴۵۶۷۸۹')) if fa else digits
+        def series(values):
+            return '<bdi dir="ltr">'+' · '.join(map(number,values))+'</bdi>'
+        status={'documented':T('Documented','مستند'),'partial':T('Partial','ناقص'),'provisional':T('Provisional','مقدماتی')}
+        labels=[
+            (T('Reference collection','مجموعهٔ مرجع'),P[profile['collection']][l]['title']),
+            (T('Pitch positions from origin (cents)','جای نت‌ها نسبت به مبدأ (سنت)'),series(profile['positions'])),
+            (T('Successive intervals through the octave (cents)','فاصله‌های پیاپی تا اکتاو (سنت)'),series(profile['steps'])),
+            (T('Shāhed · degree','درجهٔ شاهد'),number(profile['shahed'])),
+            (T('Finalis · degree','درجهٔ خاتمه'),number(profile['finalis'])),
+            (T('Evidence for opening role assignments','وضعیت مستندات نقش نت‌ها در درآمد'),status[profile['status']])]
+        return '<section><h2>'+T('Darāmad in the application','مدل درآمد در برنامه')+'</h2><dl>'+''.join(f'<dt><strong>{key}</strong></dt><dd>{value}</dd>' for key,value in labels)+'</dl></section>'
     def role_study():
         roles=[
             (T('Emphasis','تأکید'),T('C · Shāhed','دو · شاهد'),T('Listen for phrases circling this pitch.','به گردش جمله پیرامون این نت گوش کنید.')),
@@ -96,12 +112,13 @@ def page(k,l,root=False):
         if k=='history':main+=atlas_preview()
         if k=='modes':main+=index()
         if k=='notation':main+=plate()
-        if k in ('theory','abu-ata'):main+=role_study()
+        if k=='theory':main+=role_study()
         if k in ('theory','radif'):
             jump=''.join(link('#reading-'+str(i),h) for i,(h,_) in enumerate(p['sections'],1))
             main+=f'<nav class="reading-index" aria-label="{T("On this page","در این صفحه")}"><strong>{T("On this page","در این صفحه")}</strong><div>{jump}</div></nav>'
         main+='<div class="prose">'+''.join(f'<section id="reading-{i}"><h2>{escape(h)}</h2><p>{escape(v)}</p></section>' for i,(h,v) in enumerate(p.get('sections',[]),1))+'</div>'
-        if k in ('theory','radif') or k in MODES:
+        if k in MODES:main+=modal_profile()
+        if k in ('theory','radif'):
             other='theory' if k=='radif' else 'radif'
             main+=il(other,P[other][l]['title'],'secondary')+' '
         if k=='theory':main+=il('notation',T('Study the interval circle','مطالعهٔ دایرهٔ فاصله‌ها'),'primary')+' '+il('modes',T('Browse the modes','فهرست دستگاه‌ها و آوازها'),'secondary')

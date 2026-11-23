@@ -24,7 +24,17 @@ for f in sorted((R/'content').glob('*.json')):
     if P.keys() & new.keys(): raise ValueError(f'Duplicate page in {f}')
     P.update(new)
 MODES='shur nava segah chahargah homayoun mahur rast-panjgah esfahan abu-ata bayat-e-tork afshari dashti'.split()
-published=('home','article','tools')
+P['advar-atlas'] = {}
+for lang in ('en','fa'):
+    source = P['history'][lang]
+    P['advar-atlas'][lang] = {
+        'title': source['title'],
+        'lead': ('An interactive reconstruction of the interval ratios, fret positions and modal cycles described in Ṣafī al-Dīn al-Urmawī’s Book of Cycles.' if lang=='en' else 'بازسازی تعاملی نسبت فواصل، جای دستان‌ها و ادوار موسیقایی در کتاب الادوار صفی‌الدین ارموی.'),
+        'sections': source['sections'][:4],
+        'links': source['links'][1:],
+    }
+    P['tools'][lang]['title'] = 'Persian Music Scales App' if lang=='en' else 'برنامهٔ گام‌های موسیقی ایرانی'
+published=('home','article','tools','advar-atlas')
 retired=set(P).difference(published)
 APP='https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang='
 ATLAS='https://persianmusicscales.github.io/urmawi-advar-atlas/'
@@ -45,7 +55,7 @@ def page(k,l,root=False):
     p=P[k][l]
     alt='en' if fa else 'fa'
     brand=T('Persian Music Scales','گام‌های موسیقی ایرانی')
-    nav=[('article',T('Article','مقاله')),('tools',T('Tools','ابزارها'))]
+    nav=[('article',T('Article','مقاله')),('tools',P['tools'][l]['title']),('advar-atlas',T('Urmawī Advar Atlas','اطلس ادوار ارموی'))]
     navlinks=''.join(f'<a href="{loc(j)}"'+(' aria-current="page"' if j==k else '')+'>'+t+'</a>' for j,t in nav)
     header=f'<header><div class="bar"><a class="brand" href="{loc("home")}">{logo()}{brand}</a><nav aria-label="{T("Main","اصلی")}">{navlinks}</nav><div class="actions"><a lang="{alt}" hreflang="{alt}" href="{loc(k,alt)}">{T("فارسی","English")}</a><button id="theme" aria-label="{T("Change color theme","تغییر حالت رنگ")}">◐</button><button id="menu" hidden aria-expanded="false" aria-controls="mobile">{T("Menu","فهرست")}</button></div></div><nav id="mobile" hidden>{navlinks}</nav></header>'
     def plate():
@@ -68,19 +78,20 @@ def page(k,l,root=False):
     if k=='home':
         main=f'<section class="hero"><div class="herocopy"><div class="eyebrow">{T("PERSIAN CLASSICAL MUSIC","موسیقی دستگاهی ایران")}</div><h1>{T("Persian Music <em>Scales</em>","گام‌های <em>موسیقی ایرانی</em>")}</h1><p>{escape(p["lead"])}</p><div class="buttons">{il("article",T("Read the article","مطالعهٔ مقاله"),"primary")}{link(APP+l,T("Launch interactive app","ورود به برنامه"),"secondary")}</div></div>{plate()}</section>'
         main+=f'<section class="project-show app-show"><div><div class="eyebrow">{T("INTERACTIVE APPLICATION","برنامهٔ تعاملی")}</div><h2>{brand}</h2><p>{T("Listen to a mode, transpose its pitch circle, or follow a recorded melody. Select a screenshot to see how each tool works.","یک دستگاه یا آواز را بشنوید، دایرهٔ فواصل آن را انتقال دهید یا مسیر ملودی ضبط‌شده را دنبال کنید. برای دیدن بخش‌های مختلف برنامه، یکی از تصویرها را انتخاب کنید.")}</p><div class="buttons">{link(APP+l,T("Open the app","ورود به برنامه"),"primary")}{il("tools",T("Read the app guide","راهنمای برنامه"),"secondary")}</div></div>{app_gallery()}</section>'
-        main+=f'<section class="project-show atlas-show"><div class="eyebrow">{T("HISTORICAL MUSIC THEORY","نظریهٔ تاریخی موسیقی")}</div><h2>{T("Al-Urmawī Advar Atlas","اطلس ادوار صفی‌الدین ارموی")}</h2><p>{T("Explore the fret divisions in the Book of Cycles. Move along the string in the Atlas to hear how a change in sounding length changes the interval.","تقسیم دستان در کتاب الادوار را بررسی کنید. در اطلس روی سیم حرکت کنید و بشنوید که با تغییر طول بخش مرتعش سیم، فاصلهٔ موسیقایی چگونه تغییر می‌کند.")}</p><div class="buttons">{link(ATLAS+"?lang="+l,T("Open the Atlas","ورود به اطلس"),"primary")}</div>{atlas_preview()}</section>'
+        main+=f'<section class="project-show atlas-show"><div class="eyebrow">{T("HISTORICAL MUSIC THEORY","نظریهٔ تاریخی موسیقی")}</div><h2>{T("Al-Urmawī Advar Atlas","اطلس ادوار صفی‌الدین ارموی")}</h2><p>{T("Explore the fret divisions in the Book of Cycles. Move along the string in the Atlas to hear how a change in sounding length changes the interval.","تقسیم دستان در کتاب الادوار را بررسی کنید. در اطلس روی سیم حرکت کنید و بشنوید که با تغییر طول بخش مرتعش سیم، فاصلهٔ موسیقایی چگونه تغییر می‌کند.")}</p><div class="buttons">{link(ATLAS+"?lang="+l,T("Open the Atlas","ورود به اطلس"),"primary")}{il("advar-atlas",T("About the Atlas","دربارهٔ اطلس"),"secondary")}</div>{atlas_preview()}</section>'
         main+=f'<section class="paths"><div class="eyebrow">{T("RESEARCH ARTICLE","مقالهٔ پژوهشی")}</div><h2>{escape(P["article"][l]["title"])}</h2><p>{escape(P["article"][l]["lead"])}</p>{il("article",T("Read the full article","مطالعهٔ متن کامل مقاله"),"primary")}</section>'
     else:
         bread=il('home',brand)+' / '+(il('modes',T('Modes','دستگاه‌ها و آوازها'))+' / ' if k in MODES else '')+escape(p['title'])
         main=f'<div class="crumb">{bread}</div><article><div class="eyebrow">{brand}</div><h1>{escape(p["title"])}</h1><p class="lead">{escape(p["lead"])}</p>'
         if k=='article':main+=article.render(l,up)
-        if k in ('research','tools'):main+='<p>'+il('article',P['article'][l]['title'],'secondary')+'</p>'
-        if k=='tools':main+=app_gallery()
+        if k=='tools':
+            main+='<div class="buttons">'+link(APP+l,T('Launch Persian Music Scales','ورود به برنامهٔ گام‌ها'),'primary')+il('article',T('Read the research article','مطالعهٔ مقالهٔ پژوهشی'),'secondary')+'</div>'+app_gallery()
+        if k=='advar-atlas':
+            main+='<div class="buttons">'+link(ATLAS+'?lang='+l,T('Launch the Advar Atlas','ورود به اطلس ادوار'),'primary')+'</div>'+atlas_preview()
         main+='<div class="prose">'+''.join(f'<section id="reading-{i}"><h2>{escape(h)}</h2><p>{escape(v)}</p></section>' for i,(h,v) in enumerate(p.get('sections',[]),1))+'</div>'
-        if k=='tools':main+='<div class="buttons">'+link(APP+l,T('Open the scale explorer','ورود به برنامهٔ گام‌ها'),'primary')+link(ATLAS+'?lang='+l,T('Open the Advar Atlas','ورود به اطلس ادوار'),'secondary')+'</div>'
         if p.get('links'):main+='<aside><h2>'+T('Sources & further reading','منابع و مطالعهٔ بیشتر')+'</h2><ul>'+''.join('<li>'+link(url,label)+'</li>' for label,url in p['links'])+'</ul></aside>'
         main+='</article>'
-    footer=f'<footer><div><strong>{brand}</strong><p>{T("A project by","پروژه‌ای از")} {link("https://drpouyahosseini.github.io/",T("Dr. Pouya Hosseini","دکتر پویا حسینی"))}</p></div><div>{il("article",T("Article","مقاله"))}{il("tools",T("Tools","ابزارها"))}</div></footer>'
+    footer=f'<footer><div><strong>{brand}</strong><p>{T("A project by","پروژه‌ای از")} {link("https://drpouyahosseini.github.io/",T("Dr. Pouya Hosseini","دکتر پویا حسینی"))}</p></div><div>{il("article",T("Article","مقاله"))}{il("tools",P["tools"][l]["title"])}{il("advar-atlas",T("Urmawī Advar Atlas","اطلس ادوار ارموی"))}</div></footer>'
     title=escape(p['title']+' · '+brand) if k!='home' else brand
     meta=escape(p['lead'],quote=True)
     alts=''.join(f'<link rel="alternate" hreflang="{a}" href="{BASE}/{route(k,a)}">' for a in ['en','fa'])

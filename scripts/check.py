@@ -20,6 +20,15 @@ for page in sorted(root.rglob('index.html')):
     d.feed(page.read_text())
     lang=d.tags('html')[0]['lang']
     assert d.tags('html')[0]['dir']==('rtl' if lang=='fa' else 'ltr'),page
+    refresh=next((a for a in d.tags('meta') if a.get('http-equiv')=='refresh'),None)
+    if refresh:
+        target=refresh['content'].split('0;url=',1)[1]
+        destination=(page.parent/target/'index.html').resolve()
+        assert destination.is_file() and destination.parent.parent.name==lang,page
+        assert destination.parent.name in ('article','tools'),page
+        assert d.tags('a')[0]['href']==target,page
+        assert any(a.get('name')=='robots' and a.get('content')=='noindex' for a in d.tags('meta')),page
+        continue
     for tag in ['main','h1','title']:
         assert len(d.tags(tag))==1,(page,tag)
     ids=[a['id'] for _,a in d.nodes if 'id' in a]

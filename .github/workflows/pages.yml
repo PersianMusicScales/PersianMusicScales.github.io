@@ -12,13 +12,11 @@ jobs:
           persist-credentials: false
       - name: Build and check the bilingual site
         run: |
-          unzip -q Persian-Music-Scales-website.zip -d site
-          cd site
           python3 scripts/build.py
           python3 scripts/check.py
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site/dist
+          path: dist
   deploy:
     needs: build
     if: github.ref == 'refs/heads/main'

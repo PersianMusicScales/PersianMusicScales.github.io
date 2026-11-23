@@ -1,5 +1,32 @@
 {
- "home":{"en":{"title":"Persian Music Scales","lead":"Explore the modes of Iranian classical music through listening, interval diagrams, and the historical mathematics of sound."},"fa":{"title":"گام‌های موسیقی ایرانی","lead":"با شنیدن، خواندن نمودار فاصله‌ها و کاوش در ریاضیات تاریخی صدا، با دستگاه‌ها و آوازهای موسیقی ایرانی آشنا شوید."}},
- "modes":{"en":{"title":"Dastgah & Avaz","lead":"A listening guide to seven dastgahs and five related avaz traditions. Choose an entry to explore its melodic character and the limits of its pitch model."},"fa":{"title":"دستگاه‌ها و آوازها","lead":"راهنمای شنیدن هفت دستگاه و پنج آواز وابسته. هر مدخل به ویژگی‌های ملودیک و حدود کاربرد الگوی فواصل آن می‌پردازد."}},
- "search":{"en":{"title":"Search the site","lead":"Find a lesson, mode, or research resource by its English or Persian name."},"fa":{"title":"جست‌وجو در سایت","lead":"درس‌ها، دستگاه‌ها، آوازها و منابع پژوهشی را با نام فارسی یا انگلیسی پیدا کنید."}}
+  "home": {
+    "en": {
+      "title": "Persian Music Scales",
+      "lead": "Explore the modes of Iranian classical music through listening, interval diagrams, and the historical mathematics of sound."
+    },
+    "fa": {
+      "title": "گام‌های موسیقی ایرانی",
+      "lead": "با شنیدن، خواندن نمودار فاصله‌ها و کاوش در ریاضیات تاریخی صدا، با دستگاه‌ها و آوازهای موسیقی ایرانی آشنا شوید."
+    }
+  },
+  "modes": {
+    "en": {
+      "title": "Dastgāh and āvāz reference",
+      "lead": "The seven dastgāhs and five āvāzes in the project, indexed by modal affiliation. Entries document the repertory, functions of individual degrees in the darāmad, and pitch collections used in the application."
+    },
+    "fa": {
+      "title": "دستگاه‌ها و آوازها",
+      "lead": "مرجع هفت دستگاه و پنج آواز پروژه، به تفکیک وابستگی مدال. هر مدخل به رپرتوار، نقش درجات در درآمد و مجموعهٔ نت‌های به‌کاررفته در برنامه می‌پردازد."
+    }
+  },
+  "search": {
+    "en": {
+      "title": "Search the site",
+      "lead": "Find a lesson, mode, or research resource by its English or Persian name."
+    },
+    "fa": {
+      "title": "جست‌وجو در سایت",
+      "lead": "درس‌ها، دستگاه‌ها، آوازها و منابع پژوهشی را با نام فارسی یا انگلیسی پیدا کنید."
+    }
+  }
 }

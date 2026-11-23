@@ -42,7 +42,7 @@ def page(k,l,root=False):
     p=P[k][l]
     alt='en' if fa else 'fa'
     brand=T('Persian Music Scales','گام‌های موسیقی ایرانی')
-    nav=[('theory',T('Theory','مبانی')),('modes',T('Modes','دستگاه‌ها')),('tools',T('Tools','ابزارها')),('history',T('History','تاریخ')),('research',T('Research','پژوهش'))]
+    nav=[('theory',T('Theory','مبانی')),('modes',T('Modes','دستگاه‌ها و آوازها')),('tools',T('Tools','ابزارها')),('history',T('History','تاریخ')),('research',T('Research','پژوهش'))]
     navlinks=''.join(f'<a href="{loc(j)}"'+(' aria-current="page"' if j==k else '')+'>'+t+'</a>' for j,t in nav)
     header=f'<header><div class="bar"><a class="brand" href="{loc("home")}">{logo()}{brand}</a><nav aria-label="{T("Main","اصلی")}">{navlinks}</nav><div class="actions"><a lang="{alt}" hreflang="{alt}" href="{loc(k,alt)}">{T("فارسی","English")}</a><button id="theme" aria-label="{T("Change color theme","تغییر حالت رنگ")}">◐</button><button id="menu" hidden aria-expanded="false" aria-controls="mobile">{T("Menu","فهرست")}</button></div></div><nav id="mobile" hidden>{navlinks}</nav></header>'
     def plate():
@@ -50,7 +50,22 @@ def page(k,l,root=False):
     def cards(items):
         return '<div class="cards">'+''.join(f'<a href="{loc(j)}"><span class="glyph" aria-hidden="true">{g}</span><h3>{escape(P[j][l]["title"])}</h3><p>{escape(P[j][l]["lead"])}</p></a>' for j,g in items)+'</div>'
     def index():
-        return '<div class="filter" hidden><label for="filter">'+T('Find a mode','جست‌وجوی دستگاه یا آواز')+'</label><input id="filter" type="search"></div><p id="empty" hidden>'+T('No matching entry.','مدخلی پیدا نشد.')+'</p>'+''.join('<section><h2>'+t+'</h2><div class="modes">'+''.join(f'<a data-search="{escape(P[j]["fa"]["title"]+" "+P[j]["en"]["title"]+" "+j)}" href="{loc(j)}"><strong>{escape(P[j][l]["title"])}</strong><span lang="{alt}">{escape(P[j][alt]["title"])}</span></a>' for j in keys)+'</div></section>' for t,keys in [(T('Dastgah','دستگاه‌ها'),MODES[:7]),(T('Avaz','آوازها'),MODES[7:])])
+        def entry(j):
+            other=P[j][alt]['title']
+            search=escape(' '.join([P[j]['en']['title'],P[j]['fa']['title'],j]),quote=True)
+            return f'<a data-search="{search}" href="{loc(j)}"><strong>{escape(P[j][l]["title"])}</strong><span lang="{alt}">{escape(other)}</span></a>'
+        families=[('shur',MODES[8:]),('homayoun',['esfahan'])]
+        out=f'<div class="filter" hidden><label for="filter">{T("Find a mode","جست‌وجوی دستگاه یا آواز")}</label><input id="filter" type="search"></div><p id="empty" hidden>{T("No matching entry.","مدخلی پیدا نشد.")}</p>'
+        for parent,children in families:
+            out+=f'<section class="family"><h2>{T("The "+P[parent]["en"]["title"]+" family","خانوادهٔ "+P[parent]["fa"]["title"])}</h2><div class="kin"><div><h3>{T("Dastgāh","دستگاه")}</h3><div class="modes">{entry(parent)}</div></div><div><h3>{T("Related āvāz","آوازهای وابسته") if len(children)>1 else T("Related āvāz","آواز وابسته")}</h3><div class="modes">{"".join(entry(j) for j in children)}</div></div></div></section>'
+        others=[j for j in MODES[:7] if j not in ('shur','homayoun')]
+        return out+f'<section class="family"><h2>{T("Other dastgāhs in this guide","دیگر دستگاه‌ها در این راهنما")}</h2><div class="modes">{"".join(entry(j) for j in others)}</div></section>'
+    def role_study():
+        roles=[
+            (T('Emphasis','تأکید'),T('C · Shāhed','دو · شاهد'),T('Listen for phrases circling this pitch.','به گردش جمله پیرامون این نت گوش کنید.')),
+            (T('Temporary pause','مکث موقت'),T('A-koron · Ist','لاکُرُن · ایست'),T('Listen past the pause. Does the phrase continue?','پس از مکث چه می‌شنوید؟ آیا جمله ادامه دارد؟')),
+            (T('Conclusion','خاتمه'),T('G · Finalis','سل · نت پایان'),T('Hear the arrival in the context of the whole passage.','رسیدن به این نت را در بافت کل عبارت بشنوید.'))]
+        return '<figure class="role-study"><figcaption><strong>'+T('Three note functions in Abu Ata','سه نقش ملودیک در ابوعطا')+'</strong><span>'+T('Read this example from Gen’ichi Tsuge as a map of functions. The boxes have no prescribed time order.','نمونه‌ای از آوانگاری گِن‌ایچی تسوگه. کادرها نقش نت‌ها را نشان می‌دهند؛ ترتیب زمانی جمله را از روی آن‌ها نخوانید.')+'</span></figcaption><dl>'+''.join('<div><dt>'+heading+'</dt><dd><b>'+note+'</b><span>'+desc+'</span></dd></div>' for heading,note,desc in roles)+'</dl>'+link('https://www.iranicaonline.org/articles/abu-ata/',T('Read Tsuge’s Abu Ata entry','مدخل ابوعطا به قلم تسوگه'))+'</figure>'
     def app_gallery():
         shots = [
             ('shur', T('Shur', 'شور'), T('Shur on C, with the pitch circle and playback controls.', 'دایرهٔ فواصل شور روی دو، همراه با کنترل‌های پخش.')),
@@ -67,17 +82,24 @@ def page(k,l,root=False):
         description=T('The Atlas maps historical fret divisions onto a modern four-string setar.', 'در اطلس، تقسیمات تاریخی دستان روی سه‌تار چهار‌سیم امروزی نمایش داده شده‌اند.')
         return f'<figure class="instrument"><a href="{ATLAS}?lang={l}&amp;panel=explore"><img src="{up}assets/atlas-combined.webp" width="1361" height="414" alt="{description}" loading="lazy"></a><figcaption>{description}</figcaption></figure>'
     if k=='home':
-        main=f'<section class="hero"><div class="herocopy"><div class="eyebrow">{T("PERSIAN CLASSICAL MUSIC","موسیقی دستگاهی ایران")}</div><h1>{T("Persian Music <em>Scales</em>","گام‌های <em>موسیقی ایرانی</em>")}</h1><p>{escape(p["lead"])}</p><div class="buttons">{il("modes",T("Explore the modes","آشنایی با دستگاه‌ها"),"primary")}{link(APP+l,T("Launch interactive app","ورود به برنامه"),"secondary")}</div></div>{plate()}</section><section class="paths"><div class="eyebrow">{T("FIELD GUIDE","راهنمای مطالعه")}</div><h2>{T("Ways to explore","مسیرهای مطالعه")}</h2>{cards([("theory","♩"),("tools","∿"),("history","⌁")])}</section>'
+        main=f'<section class="hero"><div class="herocopy"><div class="eyebrow">{T("PERSIAN CLASSICAL MUSIC","موسیقی دستگاهی ایران")}</div><h1>{T("Persian Music <em>Scales</em>","گام‌های <em>موسیقی ایرانی</em>")}</h1><p>{escape(p["lead"])}</p><div class="buttons">{il("modes",T("Explore the modes","آشنایی با دستگاه‌ها"),"primary")}{link(APP+l,T("Launch interactive app","ورود به برنامه"),"secondary")}</div></div>{plate()}</section><section class="paths"><div class="eyebrow">{T("FIELD GUIDE","راهنمای مطالعه")}</div><h2>{T("Ways to explore","مسیرهای مطالعه")}</h2>{cards([("theory","♩"),("radif","♫"),("notation","♭")])}</section>'
         main+=f'<section class="project-show app-show"><div><div class="eyebrow">{T("INTERACTIVE APPLICATION","برنامهٔ تعاملی")}</div><h2>{brand}</h2><p>{T("Listen to a mode, transpose its pitch circle, or follow a recorded melody. Select a screenshot to see how each tool works.","یک دستگاه یا آواز را بشنوید، دایرهٔ فواصل آن را انتقال دهید یا مسیر ملودی ضبط‌شده را دنبال کنید. برای دیدن بخش‌های مختلف برنامه، یکی از تصویرها را انتخاب کنید.")}</p><div class="buttons">{link(APP+l,T("Open the app","ورود به برنامه"),"primary")}{il("tools",T("Read the app guide","راهنمای برنامه"),"secondary")}</div></div>{app_gallery()}</section>'
         main+=f'<section class="project-show atlas-show"><div class="eyebrow">{T("HISTORICAL MUSIC THEORY","نظریهٔ تاریخی موسیقی")}</div><h2>{T("Al-Urmawī Advar Atlas","اطلس ادوار صفی‌الدین ارموی")}</h2><p>{T("Explore the fret divisions in the Book of Cycles. Move along the string in the Atlas to hear how a change in sounding length changes the interval.","تقسیم دستان در کتاب الادوار را بررسی کنید. در اطلس روی سیم حرکت کنید و بشنوید که با تغییر طول بخش مرتعش سیم، فاصلهٔ موسیقایی چگونه تغییر می‌کند.")}</p><div class="buttons">{link(ATLAS+"?lang="+l,T("Open the Atlas","ورود به اطلس"),"primary")}{il("history",T("Read the historical guide","راهنمای تاریخی"),"secondary")}</div>{atlas_preview()}</section>'
     else:
-        bread=il('home',brand)+' / '+(il('modes',T('Modes','دستگاه‌ها'))+' / ' if k in MODES else '')+escape(p['title'])
+        bread=il('home',brand)+' / '+(il('modes',T('Modes','دستگاه‌ها و آوازها'))+' / ' if k in MODES else '')+escape(p['title'])
         main=f'<div class="crumb">{bread}</div><article><div class="eyebrow">{brand}</div><h1>{escape(p["title"])}</h1><p class="lead">{escape(p["lead"])}</p>'
         if k=='tools':main+=app_gallery()
         if k=='history':main+=atlas_preview()
         if k=='modes':main+=index()
         if k=='notation':main+=plate()
-        main+='<div class="prose">'+''.join(f'<section><h2>{escape(h)}</h2><p>{escape(v)}</p></section>' for h,v in p.get('sections',[]))+'</div>'
+        if k in ('theory','abu-ata'):main+=role_study()
+        if k in ('theory','radif'):
+            jump=''.join(link('#reading-'+str(i),h) for i,(h,_) in enumerate(p['sections'],1))
+            main+=f'<nav class="reading-index" aria-label="{T("On this page","در این صفحه")}"><strong>{T("On this page","در این صفحه")}</strong><div>{jump}</div></nav>'
+        main+='<div class="prose">'+''.join(f'<section id="reading-{i}"><h2>{escape(h)}</h2><p>{escape(v)}</p></section>' for i,(h,v) in enumerate(p.get('sections',[]),1))+'</div>'
+        if k in ('theory','radif') or k in MODES:
+            other='theory' if k=='radif' else 'radif'
+            main+=il(other,P[other][l]['title'],'secondary')+' '
         if k=='theory':main+=il('notation',T('Study the interval circle','مطالعهٔ دایرهٔ فاصله‌ها'),'primary')+' '+il('modes',T('Browse the modes','فهرست دستگاه‌ها و آوازها'),'secondary')
         if k in MODES:main+=link(APP+l,T('Explore in the application','کاوش در برنامه'),'primary')+' '+il('modes',T('All modes','همهٔ دستگاه‌ها و آوازها'),'secondary')
         if k=='tools':main+=link(APP+l,T('Open the scale explorer','ورود به برنامهٔ گام‌ها'),'primary')

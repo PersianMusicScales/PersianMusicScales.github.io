@@ -87,7 +87,7 @@ def page(k,l,root=False):
         main+='<div class="prose">'+''.join(f'<section id="reading-{i}"><h2>{escape(h)}</h2><p>{escape(v)}</p></section>' for i,(h,v) in enumerate(p.get('sections',[]),1))+'</div>'
         if p.get('links'):main+='<aside><h2>'+T('Sources & further reading','منابع و مطالعهٔ بیشتر')+'</h2><ul>'+''.join('<li>'+link(url,label)+'</li>' for label,url in p['links'])+'</ul></aside>'
         main+='</article>'
-    footer=f'<footer><div><strong>{brand}</strong><p>{T("A project by","پروژه‌ای از")} {link("https://drpouyahosseini.github.io/",T("Dr. Pouya Hosseini","دکتر پویا حسینی"))}</p></div><div>{il("article",T("Article","مقاله"))}{il("tools",P["tools"][l]["title"])}{il("advar-atlas",T("Urmawī Advar Atlas","اطلس ادوار ارموی"))}</div></footer>'
+    footer=f'<footer><div><strong>{brand}</strong><p>{T("A project by","پروژه‌ای از")} {link("https://drpouyahosseini.github.io/",T("Dr. Pouya Hosseini","دکتر پویا حسینی"))}</p></div><div>{il("article",T("Article","مقاله"))}{il("tools",P["tools"][l]["title"])}{il("advar-atlas",T("Urmawī Advar Atlas","اطلس ادوار ارموی"))}{link("https://persianmusicscales.github.io/international-music-scales-atlas/",T("World Music Scales Atlas","اطلس گام‌های موسیقی جهان"))}</div></footer>'
     title=escape(p['title']+' · '+brand) if k!='home' else brand
     meta=escape(p['lead'],quote=True)
     alts=''.join(f'<link rel="alternate" hreflang="{a}" href="{BASE}/{route(k,a)}">' for a in ['en','fa'])

@@ -4,7 +4,6 @@ from html import escape
 from pathlib import Path
 from urllib.parse import urlparse
 from xml.etree import ElementTree as ET
-from figures import dial
 import article
 R=Path(__file__).resolve().parents[1]
 O=R/'dist'
@@ -43,8 +42,6 @@ def route(k,l):
     return l+'/'+slug
 def link(url,t,css=''):
     return f'<a class="{css}" href="{escape(url,quote=True)}">{escape(t)}</a>'
-def logo():
-    return '<svg viewBox="0 0 40 40" width="39" height="39" aria-hidden="true" fill="none" stroke="currentColor"><circle cx="20" cy="20" r="17"/><circle cx="20" cy="20" r="12"/><path d="m20 4 14 24H6Zm0 32L6 12h28Z"/><circle cx="20" cy="20" r="3"/></svg>'
 def page(k,l,root=False):
     fa=l=='fa'
     def T(a,b):return b if fa else a
@@ -57,9 +54,7 @@ def page(k,l,root=False):
     brand=T('Persian Music Scales','گام‌های موسیقی ایرانی')
     nav=[('article',T('Article','مقاله')),('tools',P['tools'][l]['title']),('advar-atlas',T('Urmawī Advar Atlas','اطلس ادوار ارموی'))]
     navlinks=''.join(f'<a href="{loc(j)}"'+(' aria-current="page"' if j==k else '')+'>'+t+'</a>' for j,t in nav)
-    header=f'<header><div class="bar"><a class="brand" href="{loc("home")}">{logo()}{brand}</a><nav aria-label="{T("Main","اصلی")}">{navlinks}</nav><div class="actions"><a lang="{alt}" hreflang="{alt}" href="{loc(k,alt)}">{T("فارسی","English")}</a><button id="theme" aria-label="{T("Change color theme","تغییر حالت رنگ")}">◐</button><button id="menu" hidden aria-expanded="false" aria-controls="mobile">{T("Menu","فهرست")}</button></div></div><nav id="mobile" hidden>{navlinks}</nav></header>'
-    def plate():
-        return f'<figure class="plate"><figcaption>{T("INTERVAL STUDY","مطالعهٔ فاصله‌ها")} <span>{T("MODEL · 24 EDO","مدل · ۲۴ قسمت مساوی")}</span></figcaption>{dial(l)}<div class="dialctrl"><button data-step="-1" aria-label="{T("Previous pitch position","جایگاه قبلی")}">−</button><output aria-live="polite" data-unit="{T("cents","سنت")}">0 {T("cents","سنت")}</output><button data-step="1" aria-label="{T("Next pitch position","جایگاه بعدی")}">+</button></div><small>{T("One step = 50 cents in this model.","هر گام در این مدل برابر با ۵۰ سنت است.")}</small></figure>'
+    header=f'<header><div class="bar"><a class="brand" href="{loc("home")}"><img src="{up}assets/setar.webp" width="39" height="39" alt="" style="border-radius:20%">{brand}</a><nav aria-label="{T("Main","اصلی")}">{navlinks}</nav><div class="actions"><a lang="{alt}" hreflang="{alt}" href="{loc(k,alt)}">{T("فارسی","English")}</a><button id="theme" aria-label="{T("Change color theme","تغییر حالت رنگ")}">◐</button><button id="menu" hidden aria-expanded="false" aria-controls="mobile">{T("Menu","فهرست")}</button></div></div><nav id="mobile" hidden>{navlinks}</nav></header>'
     def app_gallery():
         shots = [
             ('shur', T('Shur', 'شور'), T('Shur on C, with the pitch circle and playback controls.', 'دایرهٔ فواصل شور روی دو، همراه با کنترل‌های پخش.')),
@@ -76,7 +71,7 @@ def page(k,l,root=False):
         description=T('The Atlas maps historical fret divisions onto a modern four-string setar.', 'در اطلس، تقسیمات تاریخی دستان روی سه‌تار چهار‌سیم امروزی نمایش داده شده‌اند.')
         return f'<figure class="instrument"><a href="{ATLAS}?lang={l}&amp;panel=explore"><img src="{up}assets/atlas-combined.webp" width="1361" height="414" alt="{description}" loading="lazy"></a><figcaption>{description}</figcaption></figure>'
     if k=='home':
-        main=f'<section class="hero"><div class="herocopy"><div class="eyebrow">{T("PERSIAN CLASSICAL MUSIC","موسیقی دستگاهی ایران")}</div><h1>{T("Persian Music <em>Scales</em>","گام‌های <em>موسیقی ایرانی</em>")}</h1><p>{escape(p["lead"])}</p><div class="buttons">{il("article",T("Read the article","مطالعهٔ مقاله"),"primary")}{link(APP+l,T("Launch interactive app","ورود به برنامه"),"secondary")}</div></div>{plate()}</section>'
+        main=f'<section class="hero"><div class="herocopy"><div class="eyebrow">{T("PERSIAN CLASSICAL MUSIC","موسیقی دستگاهی ایران")}</div><h1>{T("Persian Music <em>Scales</em>","گام‌های <em>موسیقی ایرانی</em>")}</h1><p>{escape(p["lead"])}</p><div class="buttons">{il("article",T("Read the article","مطالعهٔ مقاله"),"primary")}{link(APP+l,T("Launch interactive app","ورود به برنامه"),"secondary")}</div></div><img src="{up}assets/setar.webp" width="640" height="640" alt="" style="display:block;width:min(65%,21rem);height:auto;justify-self:center;border-radius:24%"></section>'
         main+=f'<section class="project-show app-show"><div><div class="eyebrow">{T("INTERACTIVE APPLICATION","برنامهٔ تعاملی")}</div><h2>{brand}</h2><p>{T("Listen to a mode, transpose its pitch circle, or follow a recorded melody. Select a screenshot to see how each tool works.","یک دستگاه یا آواز را بشنوید، دایرهٔ فواصل آن را انتقال دهید یا مسیر ملودی ضبط‌شده را دنبال کنید. برای دیدن بخش‌های مختلف برنامه، یکی از تصویرها را انتخاب کنید.")}</p><div class="buttons">{link(APP+l,T("Open the app","ورود به برنامه"),"primary")}{il("tools",T("Read the app guide","راهنمای برنامه"),"secondary")}</div></div>{app_gallery()}</section>'
         main+=f'<section class="project-show atlas-show"><div class="eyebrow">{T("HISTORICAL MUSIC THEORY","نظریهٔ تاریخی موسیقی")}</div><h2>{T("Al-Urmawī Advar Atlas","اطلس ادوار صفی‌الدین ارموی")}</h2><p>{T("Explore the fret divisions in the Book of Cycles. Move along the string in the Atlas to hear how a change in sounding length changes the interval.","تقسیم دستان در کتاب الادوار را بررسی کنید. در اطلس روی سیم حرکت کنید و بشنوید که با تغییر طول بخش مرتعش سیم، فاصلهٔ موسیقایی چگونه تغییر می‌کند.")}</p><div class="buttons">{link(ATLAS+"?lang="+l,T("Open the Atlas","ورود به اطلس"),"primary")}{il("advar-atlas",T("About the Atlas","دربارهٔ اطلس"),"secondary")}</div>{atlas_preview()}</section>'
         main+=f'<section class="paths"><div class="eyebrow">{T("RESEARCH ARTICLE","مقالهٔ پژوهشی")}</div><h2>{escape(P["article"][l]["title"])}</h2><p>{escape(P["article"][l]["lead"])}</p>{il("article",T("Read the full article","مطالعهٔ متن کامل مقاله"),"primary")}</section>'
@@ -98,7 +93,7 @@ def page(k,l,root=False):
     structured=json.dumps({'@context':'https://schema.org','@type':'WebPage','name':p['title'],'inLanguage':l,'url':BASE+'/'+path},ensure_ascii=False)
     noindex='<meta name="robots" content="noindex,nofollow">' if PREVIEW else ''
     verification='<meta name="google-site-verification" content="bar9iVDKejX30uUGMR7PgldOZCrXmeHWHFh6p5Cgv7w">' if k=='home' and not PREVIEW else ''
-    return f'''<!doctype html><html lang="{l}" dir="{T("ltr","rtl")}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">{noindex}{verification}<title>{title}</title><meta name="description" content="{meta}"><link rel="canonical" href="{BASE}/{path}">{alts}<link rel="alternate" hreflang="x-default" href="{BASE}/{route(k,"en")}"><meta property="og:title" content="{title}"><meta property="og:description" content="{meta}"><meta property="og:type" content="website"><meta property="og:url" content="{BASE}/{path}"><meta property="og:image" content="{BASE}/assets/share.png"><link rel="icon" href="{up}assets/icon.svg"><link rel="stylesheet" href="{up}assets/style.css"><script src="{up}assets/theme.js"></script><script src="{up}assets/ui.js" defer></script><script type="application/ld+json">{structured}</script></head><body><a class="skip" href="#content">{T("Skip to content","رفتن به محتوا")}</a>{header}<main id="content">{main}</main>{footer}</body></html>'''
+    return f'''<!doctype html><html lang="{l}" dir="{T("ltr","rtl")}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">{noindex}{verification}<title>{title}</title><meta name="description" content="{meta}"><link rel="canonical" href="{BASE}/{path}">{alts}<link rel="alternate" hreflang="x-default" href="{BASE}/{route(k,"en")}"><meta property="og:title" content="{title}"><meta property="og:description" content="{meta}"><meta property="og:type" content="website"><meta property="og:url" content="{BASE}/{path}"><meta property="og:image" content="{BASE}/assets/share.png"><link rel="icon" href="{up}assets/setar.webp"><link rel="stylesheet" href="{up}assets/style.css"><script src="{up}assets/theme.js"></script><script src="{up}assets/ui.js" defer></script><script type="application/ld+json">{structured}</script></head><body><a class="skip" href="#content">{T("Skip to content","رفتن به محتوا")}</a>{header}<main id="content">{main}</main>{footer}</body></html>'''
 for k in published:
     for lang in ['en','fa']:
         write(route(k,lang)+'index.html',page(k,lang))
@@ -111,7 +106,7 @@ for k in retired:
         canonical=BASE+'/'+route(target,lang)
         write(old+'index.html',f'<!doctype html><html lang="{lang}" dir="{("rtl" if lang=="fa" else "ltr")}"><head><meta charset="utf-8"><title>{title}</title><meta name="robots" content="noindex"><link rel="canonical" href="{canonical}"><meta http-equiv="refresh" content="0;url={dest}"></head><body><main><a href="{dest}">{title}</a></main></body></html>')
 write('index.html',page('home','en',True))
-write('assets/icon.svg',logo().replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" color="#699b8b" '))
+shutil.copyfile(R/'scripts/setar.webp', O/'assets/setar.webp')
 write('.nojekyll','')
 verification_file = 'googled2e5da6be79bd23d.html'
 (O/'assets'/verification_file).replace(O/verification_file)

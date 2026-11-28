@@ -39,4 +39,4 @@ Use SITE_URL to choose the final absolute origin, optionally with a subpath. It 
 
 ## Rights and attribution
 
-Dr. Pouya Hosseini is the project creator. Rights and contacts for each linked application appear on the About pages. Font distributions include their SIL Open Font Licenses in assets/fonts. The new site uses original instructional diagrams and links to external recordings and manuscript collections through their sources. Inclusion of a link grants no additional redistribution rights. Confirm the intended reuse policy for the new editorial material before public release.
+Dr. Pouya Hosseini is the project creator. Rights and contacts for each linked application appear on the About pages. Font distributions include their SIL Open Font Licenses in assets/fonts. The new site uses original instructional diagrams and links to external recordings and manuscript collections through their sources. Inclusion of a link grants no additional redistribution rights. See [LICENSE](LICENSE) for the rights notice governing original editorial and software material.

@@ -90,7 +90,7 @@ def page(k,l,root=False):
         if k=='tools':
             main+='<div class="buttons">'+link(APP+l,T('Launch Persian Music Scales','ورود به برنامهٔ گام‌ها'),'primary')+il('article',T('Read the research article','مطالعهٔ مقالهٔ پژوهشی'),'secondary')+'</div>'+app_gallery()
         if k=='advar-atlas':
-            main+='<div class="buttons">'+link(ATLAS+'?lang='+l,T('Launch the Advar Atlas','ورود به اطلس ادوار'),'primary')+'</div>'+atlas_preview()
+            main+='<div class="buttons">'+link(ATLAS+'?lang='+l,T('Launch the Advar Atlas','ورود به اطلس ادوار'),'primary')+link(ATLAS+'reference/'+l+'/',T('Scholarly reference and exact pitch data','مرجع پژوهشی و داده‌های دقیق نغمه‌ها'),'secondary')+'</div>'+atlas_preview()
         main+='<div class="prose">'+''.join(f'<section id="reading-{i}"><h2>{escape(h)}</h2><p>{escape(v)}</p></section>' for i,(h,v) in enumerate(p.get('sections',[]),1))+'</div>'
         if p.get('links'):main+='<aside><h2>'+T('Sources & further reading','منابع و مطالعهٔ بیشتر')+'</h2><ul>'+''.join('<li>'+link(url,label)+'</li>' for label,url in p['links'])+'</ul></aside>'
         main+='</article>'
@@ -160,5 +160,5 @@ for k in published:
 write('sitemap.xml',ET.tostring(s,encoding='unicode',xml_declaration=True))
 if not PREVIEW:
     write('llms.txt', '# Persian Music Scales\n\n> Bilingual educational project by Dr. Pouya Hosseini on Persian classical music, interactive pitch models and historical interval theory. Scale diagrams are simplified models, not substitutes for melodic practice.\n\n## Main resources\n\n'+'\n'.join(f'- [{P[k][l]["title"]}]({canonical_url(k,l)}): {P[k][l]["lead"]}' for k in published for l in ('en','fa'))+'\n\n## Related projects\n\n- [Persian Music Scales App]('+APP+'en)\n- [Urmawī Advar Atlas]('+ATLAS+')\n- [World Music Scales Atlas]('+WORLD+')\n- [Author website]('+AUTHOR+')\n')
-write('robots.txt','User-agent: *\n'+('Disallow: /\n' if PREVIEW else 'Allow: /\nSitemap: '+BASE+'/sitemap.xml\n'))
+write('robots.txt','User-agent: *\n'+('Disallow: /\n' if PREVIEW else 'Allow: /\nSitemap: '+BASE+'/sitemap.xml\nSitemap: '+ATLAS+'sitemap.xml\n'))
 print('Generated',len(published)*2+1,'content pages and',len(retired)*2,'redirects')

@@ -4,7 +4,7 @@ Bilingual educational gateway created for Dr. Pouya Hosseini. This repository co
 
 **Public website:** https://persianmusicscales.github.io/
 
-Use the Actions tab to run “Publish Persian Music Scales” on main after reviewing edits. The workflow builds from the editable source directories and verifies the output before deploying. Persian-Music-Scales-website.zip is the original review snapshot.
+Approved changes pushed or merged into `main` are published automatically after the build and checks succeed. The Actions tab also supports a manual release on `main`. The workflow builds from the editable source directories and verifies the output before deploying. Persian-Music-Scales-website.zip is the original review snapshot.
 
 ## Local development
 
@@ -29,7 +29,7 @@ Open http://localhost:8000/. Edit the source and repeat the first two commands t
 | assets | Local fonts, font licenses, theme, interaction code and social preview |
 | docs | Source audit, migration decisions, verification record and release checklist |
 | dist | Generated HTML, assets and sitemap |
-| .github/workflows/pages.yml | Build checks and an explicitly invoked public release |
+| .github/workflows/pages.yml | Build checks and automatic main-branch releases and manual redeployment |
 
 Each content key is a stable page slug. Under it keep en and fa objects with title, lead, sections and links. Sections are ordered heading/paragraph pairs. Links are label/absolute URL pairs. Text is escaped during the build. Pair translations in the same change. A new ordinary content key is generated in both editions and added to search and the sitemap. Add an editorial link from a relevant existing page. For a mode, also update MODES and its classification in the generator. Keep published slugs stable.
 

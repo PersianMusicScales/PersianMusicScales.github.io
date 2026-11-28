@@ -1,6 +1,6 @@
 # Persian Music Scales
 
-Bilingual educational gateway created for Dr. Pouya Hosseini. This repository contains the central website. Both interactive applications retain their own repositories.
+Bilingual educational gateway created for Pouya Hosseini. This repository contains the central website. Both interactive applications retain their own repositories.
 
 **Public website:** https://persianmusicscales.github.io/
 
@@ -39,4 +39,4 @@ Use SITE_URL to choose the final absolute origin, optionally with a subpath. It 
 
 ## Rights and attribution
 
-Dr. Pouya Hosseini is the project creator. Rights and contacts for each linked application appear on the About pages. Font distributions include their SIL Open Font Licenses in assets/fonts. The new site uses original instructional diagrams and links to external recordings and manuscript collections through their sources. Inclusion of a link grants no additional redistribution rights. See [LICENSE](LICENSE) for the rights notice governing original editorial and software material.
+Pouya Hosseini is the project creator. Rights and contacts for each linked application appear on the About pages. Font distributions include their SIL Open Font Licenses in assets/fonts. The new site uses original instructional diagrams and links to external recordings and manuscript collections through their sources. Inclusion of a link grants no additional redistribution rights. See [LICENSE](LICENSE) for the rights notice governing original editorial and software material.

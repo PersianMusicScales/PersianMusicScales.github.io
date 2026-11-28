@@ -160,5 +160,5 @@ for k in published:
 write('sitemap.xml',ET.tostring(s,encoding='unicode',xml_declaration=True))
 if not PREVIEW:
     write('llms.txt', '# Persian Music Scales\n\n> Bilingual educational project by Dr. Pouya Hosseini on Persian classical music, interactive pitch models and historical interval theory. Scale diagrams are simplified models, not substitutes for melodic practice.\n\n## Main resources\n\n'+'\n'.join(f'- [{P[k][l]["title"]}]({canonical_url(k,l)}): {P[k][l]["lead"]}' for k in published for l in ('en','fa'))+'\n\n## Related projects\n\n- [Persian Music Scales App]('+APP+'en)\n- [Urmawī Advar Atlas]('+ATLAS+')\n- [World Music Scales Atlas]('+WORLD+')\n- [Author website]('+AUTHOR+')\n')
-write('robots.txt','User-agent: *\n'+('Disallow: /\n' if PREVIEW else 'Allow: /\nSitemap: '+BASE+'/sitemap.xml\nSitemap: '+ATLAS+'sitemap.xml\n'))
+write('robots.txt','User-agent: *\n'+('Disallow: /\n' if PREVIEW else 'Allow: /\nSitemap: '+BASE+'/sitemap.xml\nSitemap: '+ATLAS+'sitemap.xml\nSitemap: '+APP.split('index.html')[0]+'sitemap.xml\n'))
 print('Generated',len(published)*2+1,'content pages and',len(retired)*2,'redirects')

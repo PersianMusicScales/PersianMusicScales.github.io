@@ -38,9 +38,13 @@ published=('home','article','tools','advar-atlas')
 retired=set(P).difference(published)
 APP='https://persianmusicscales.github.io/Persian-Music-Scales-App/index.html?lang='
 ATLAS='https://persianmusicscales.github.io/urmawi-advar-atlas/'
+WORLD='https://worldmusicscalesatlas.github.io/'
+AUTHOR='https://drpouyahosseini.github.io/'
 def route(k,l):
     slug='' if k=='home' else ('modes/' if k in MODES else '')+k+'/'
     return l+'/'+slug
+def canonical_url(k,l):
+    return BASE+'/' + ('' if k=='home' and l=='en' else route(k,l))
 def link(url,t,css=''):
     return f'<a class="{css}" href="{escape(url,quote=True)}">{escape(t)}</a>'
 def page(k,l,root=False):
@@ -48,7 +52,7 @@ def page(k,l,root=False):
     def T(a,b):return b if fa else a
     path=route(k,l)
     up='./' if root else '../'*path.count('/')
-    def loc(j,lang=l):return up+route(j,lang)
+    def loc(j,lang=l):return up+('' if j=='home' and lang=='en' else route(j,lang))
     def il(j,t,c=''):return link(loc(j),t,c)
     p=P[k][l]
     alt='en' if fa else 'fa'
@@ -73,13 +77,16 @@ def page(k,l,root=False):
         return f'<figure class="instrument"><a href="{ATLAS}?lang={l}&amp;panel=explore"><img src="{up}assets/atlas-combined.webp" width="1361" height="414" alt="{description}" loading="lazy"></a><figcaption>{description}</figcaption></figure>'
     if k=='home':
         main=f'<section class="hero" style="display:block"><div class="herocopy" style="max-width:52rem"><div class="eyebrow">{T("PERSIAN CLASSICAL MUSIC","موسیقی دستگاهی ایران")}</div><h1>{T("Persian Music <em>Scales</em>","گام‌های <em>موسیقی ایرانی</em>")}</h1><p>{escape(p["lead"])}</p><div class="buttons">{il("article",T("Read the article","مطالعهٔ مقاله"),"primary")}{link(APP+l,T("Launch interactive app","ورود به برنامه"),"secondary")}</div></div></section>'
+        main+=f'<section class="hub-intro"><h2>{T("Explore Persian modes and microtonal intervals","آشنایی با دستگاه‌ها و فواصل ریزپرده‌ای موسیقی ایران")}</h2><p>{T("Study dastgāh and āvāz through interactive pitch circles, cent-based interval diagrams, scale transposition, and audio analysis. The numerical models support learning and comparison; they do not replace the melodic grammar or performance practice of Persian classical music.","دستگاه‌ها و آوازها را با دایره‌های تعاملی نت‌ها، نمودار فواصل بر حسب سنت، انتقال گام و تحلیل صوت بررسی کنید. مدل‌های عددی برای یادگیری و مقایسه‌اند و جایگزین دستور ملودیک یا شیوهٔ اجرای موسیقی دستگاهی ایران نیستند.")}</p></section>'
         main+=f'<section class="project-show app-show"><div><div class="eyebrow">{T("INTERACTIVE APPLICATION","برنامهٔ تعاملی")}</div><h2>{brand}</h2><p>{T("Listen to a mode, transpose its pitch circle, or follow a recorded melody. Select a screenshot to see how each tool works.","یک دستگاه یا آواز را بشنوید، دایرهٔ فواصل آن را انتقال دهید یا مسیر ملودی ضبط‌شده را دنبال کنید. برای دیدن بخش‌های مختلف برنامه، یکی از تصویرها را انتخاب کنید.")}</p><div class="buttons">{link(APP+l,T("Open the app","ورود به برنامه"),"primary")}{il("tools",T("Read the app guide","راهنمای برنامه"),"secondary")}</div></div>{app_gallery()}</section>'
         main+=f'<section class="project-show atlas-show"><div class="eyebrow">{T("HISTORICAL MUSIC THEORY","نظریهٔ تاریخی موسیقی")}</div><h2>{T("Al-Urmawī Advar Atlas","اطلس ادوار صفی‌الدین ارموی")}</h2><p>{T("Explore the fret divisions in the Book of Cycles. Move along the string in the Atlas to hear how a change in sounding length changes the interval.","تقسیم دستان در کتاب الادوار را بررسی کنید. در اطلس روی سیم حرکت کنید و بشنوید که با تغییر طول بخش مرتعش سیم، فاصلهٔ موسیقایی چگونه تغییر می‌کند.")}</p><div class="buttons">{link(ATLAS+"?lang="+l,T("Open the Atlas","ورود به اطلس"),"primary")}{il("advar-atlas",T("About the Atlas","دربارهٔ اطلس"),"secondary")}</div>{atlas_preview()}</section>'
         main+=f'<section class="paths"><div class="eyebrow">{T("RESEARCH ARTICLE","مقالهٔ پژوهشی")}</div><h2>{escape(P["article"][l]["title"])}</h2><p>{escape(P["article"][l]["lead"])}</p>{il("article",T("Read the full article","مطالعهٔ متن کامل مقاله"),"primary")}</section>'
     else:
         bread=il('home',brand)+' / '+(il('modes',T('Modes','دستگاه‌ها و آوازها'))+' / ' if k in MODES else '')+escape(p['title'])
         main=f'<div class="crumb">{bread}</div><article><div class="eyebrow">{brand}</div><h1>{escape(p["title"])}</h1><p class="lead">{escape(p["lead"])}</p>'
-        if k=='article':main+=article.render(l,up)
+        if k=='article':
+            main+='<p class="article-byline">'+T('By ','نویسنده: ')+link(AUTHOR,T('Dr. Pouya Hosseini','دکتر پویا حسینی'))+'</p>'
+            main+=article.render(l,up)
         if k=='tools':
             main+='<div class="buttons">'+link(APP+l,T('Launch Persian Music Scales','ورود به برنامهٔ گام‌ها'),'primary')+il('article',T('Read the research article','مطالعهٔ مقالهٔ پژوهشی'),'secondary')+'</div>'+app_gallery()
         if k=='advar-atlas':
@@ -87,14 +94,34 @@ def page(k,l,root=False):
         main+='<div class="prose">'+''.join(f'<section id="reading-{i}"><h2>{escape(h)}</h2><p>{escape(v)}</p></section>' for i,(h,v) in enumerate(p.get('sections',[]),1))+'</div>'
         if p.get('links'):main+='<aside><h2>'+T('Sources & further reading','منابع و مطالعهٔ بیشتر')+'</h2><ul>'+''.join('<li>'+link(url,label)+'</li>' for label,url in p['links'])+'</ul></aside>'
         main+='</article>'
-    footer=f'<footer><div><strong>{brand}</strong><p>{T("A project by","پروژه‌ای از")} {link("https://drpouyahosseini.github.io/",T("Dr. Pouya Hosseini","دکتر پویا حسینی"))}</p></div><div>{il("article",T("Article","مقاله"))}{il("tools",P["tools"][l]["title"])}{il("advar-atlas",T("Urmawī Advar Atlas","اطلس ادوار ارموی"))}{link("https://persianmusicscales.github.io/international-music-scales-atlas/",T("World Music Scales Atlas","اطلس گام‌های موسیقی جهان"))}</div></footer>'
-    title=escape(p['title']+' · '+brand) if k!='home' else brand
-    meta=escape(p['lead'],quote=True)
-    alts=''.join(f'<link rel="alternate" hreflang="{a}" href="{BASE}/{route(k,a)}">' for a in ['en','fa'])
-    structured=json.dumps({'@context':'https://schema.org','@type':'WebPage','name':p['title'],'inLanguage':l,'url':BASE+'/'+path},ensure_ascii=False)
-    noindex='<meta name="robots" content="noindex,nofollow">' if PREVIEW else ''
+    footer=f'<footer><div><strong>{brand}</strong><p>{T("A project by","پروژه‌ای از")} {link("https://drpouyahosseini.github.io/",T("Dr. Pouya Hosseini","دکتر پویا حسینی"))}</p></div><div>{il("article",T("Article","مقاله"))}{il("tools",P["tools"][l]["title"])}{il("advar-atlas",T("Urmawī Advar Atlas","اطلس ادوار ارموی"))}{link("https://worldmusicscalesatlas.github.io/",T("World Music Scales Atlas","اطلس گام‌های موسیقی جهان"))}</div></footer>'
+    page_titles={
+        'home': T('Persian Music Scales – Dastgah, Avaz & Microtonal Theory','گام‌های موسیقی ایرانی | دستگاه، آواز و فواصل ریزپرده‌ای'),
+        'article': p['title']+' · '+brand,
+        'tools': T('Persian Music Scales App – Interactive Scales & Audio Analysis','برنامهٔ گام‌های موسیقی ایرانی | گام و تحلیل صوت'),
+        'advar-atlas': T('Urmawī Advar Atlas – Historical Persian Music Theory','اطلس ادوار ارموی | نظریهٔ تاریخی موسیقی ایران'),
+    }
+    descriptions={
+        'home': T('Explore Persian classical music, dastgah, avaz and microtonal intervals through an interactive scale app, historical music atlas and research article by Dr. Pouya Hosseini.','دستگاه‌ها، آوازها و فواصل ریزپرده‌ای موسیقی ایرانی را با برنامهٔ تعاملی گام‌ها، اطلس ادوار ارموی و مقالهٔ دکتر پویا حسینی بررسی کنید.'),
+        'tools': T('Explore Persian scales with interactive pitch circles, transposition, playback and browser-based audio analysis.','گام‌های موسیقی ایرانی را با دایرهٔ نت‌ها، انتقال گام، پخش صوت و تحلیل صوت در مرورگر بررسی کنید.'),
+    }
+    title=escape(page_titles[k],quote=True)
+    summary=descriptions.get(k,p['lead'])
+    meta=escape(summary,quote=True)
+    canonical=canonical_url(k,l)
+    alts=''.join(f'<link rel="alternate" hreflang="{a}" href="{canonical_url(k,a)}">' for a in ('en','fa'))
+    person={'@type':'Person','@id':AUTHOR+'#person','name':'Dr. Pouya Hosseini','alternateName':'دکتر پویا حسینی','url':AUTHOR}
+    website={'@type':'WebSite','@id':BASE+'/#website','name':'Persian Music Scales','alternateName':'گام‌های موسیقی ایرانی','url':BASE+'/','inLanguage':['en','fa'],'creator':{'@id':person['@id']}}
+    page_node={'@type':'WebPage','@id':canonical+'#webpage','name':page_titles[k],'description':summary,'inLanguage':l,'url':canonical,'isPartOf':{'@id':website['@id']},'creator':{'@id':person['@id']}}
+    graph=[person,website,page_node]
+    if k=='article':
+        article_node={'@type':'Article','@id':canonical+'#article','headline':p['title'],'description':summary,'inLanguage':l,'author':{'@id':person['@id']},'mainEntityOfPage':{'@id':page_node['@id']},'url':canonical,'image':BASE+'/assets/share.png'}
+        graph.append(article_node)
+        page_node['mainEntity']={'@id':article_node['@id']}
+    structured=json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False).replace('<',r'\u003c')
+    noindex='<meta name="robots" content="noindex,nofollow">' if PREVIEW else '<meta name="robots" content="index,follow,max-image-preview:large">'
     verification='<meta name="google-site-verification" content="bar9iVDKejX30uUGMR7PgldOZCrXmeHWHFh6p5Cgv7w">' if k=='home' and not PREVIEW else ''
-    return f'''<!doctype html><html lang="{l}" dir="{T("ltr","rtl")}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">{noindex}{verification}<title>{title}</title><meta name="description" content="{meta}"><link rel="canonical" href="{BASE}/{path}">{alts}<link rel="alternate" hreflang="x-default" href="{BASE}/{route(k,"en")}"><meta property="og:title" content="{title}"><meta property="og:description" content="{meta}"><meta property="og:type" content="website"><meta property="og:url" content="{BASE}/{path}"><meta property="og:image" content="{BASE}/assets/share.png"><link rel="icon" href="{up}assets/setar.webp"><link rel="apple-touch-icon" sizes="180x180" href="{up}apple-touch-icon.png"><meta name="apple-mobile-web-app-title" content="{shortcut_names[l]}"><link rel="manifest" href="{up}{l}/site.webmanifest"><link rel="stylesheet" href="{up}assets/style.css"><script src="{up}assets/theme.js"></script><script src="{up}assets/ui.js" defer></script><script type="application/ld+json">{structured}</script></head><body><a class="skip" href="#content">{T("Skip to content","رفتن به محتوا")}</a>{header}<main id="content">{main}</main>{footer}</body></html>'''
+    return f'''<!doctype html><html lang="{l}" dir="{T("ltr","rtl")}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">{noindex}{verification}<title>{title}</title><meta name="description" content="{meta}"><link rel="canonical" href="{canonical}">{alts}<link rel="alternate" hreflang="x-default" href="{canonical_url(k,"en")}"><meta property="og:title" content="{title}"><meta property="og:description" content="{meta}"><meta property="og:type" content="{'article' if k=='article' else 'website'}"><meta property="og:site_name" content="{brand}"><meta property="og:locale" content="{T('en_US','fa_IR')}"><meta property="og:locale:alternate" content="{T('fa_IR','en_US')}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{BASE}/assets/share.png"><meta property="og:image:alt" content="{brand}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{meta}"><meta name="twitter:image" content="{BASE}/assets/share.png"><meta name="author" content="Dr. Pouya Hosseini"><link rel="icon" href="{up}assets/setar.webp"><link rel="apple-touch-icon" sizes="180x180" href="{up}apple-touch-icon.png"><meta name="apple-mobile-web-app-title" content="{shortcut_names[l]}"><link rel="manifest" href="{up}{l}/site.webmanifest"><link rel="stylesheet" href="{up}assets/style.css"><script src="{up}assets/theme.js"></script><script src="{up}assets/ui.js" defer></script><script type="application/ld+json">{structured}</script></head><body><a class="skip" href="#content">{T("Skip to content","رفتن به محتوا")}</a>{header}<main id="content">{main}</main>{footer}</body></html>'''
 for k in published:
     for lang in ['en','fa']:
         write(route(k,lang)+'index.html',page(k,lang))
@@ -122,9 +149,16 @@ for lang, short_name in shortcut_names.items():
 write('.nojekyll','')
 verification_file = 'googled2e5da6be79bd23d.html'
 (O/'assets'/verification_file).replace(O/verification_file)
+ET.register_namespace('xhtml','http://www.w3.org/1999/xhtml')
 s=ET.Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
 for k in published:
-    for l in ['en','fa']:ET.SubElement(ET.SubElement(s,'url'),'loc').text=BASE+'/'+route(k,l)
-write('sitemap.xml',ET.tostring(s,encoding='unicode'))
+    for l in ('en','fa'):
+        node=ET.SubElement(s,'url')
+        ET.SubElement(node,'loc').text=canonical_url(k,l)
+        for a in ('en','fa','x-default'):
+            ET.SubElement(node,'{http://www.w3.org/1999/xhtml}link',rel='alternate',hreflang=a,href=canonical_url(k,'en' if a=='x-default' else a))
+write('sitemap.xml',ET.tostring(s,encoding='unicode',xml_declaration=True))
+if not PREVIEW:
+    write('llms.txt', '# Persian Music Scales\n\n> Bilingual educational project by Dr. Pouya Hosseini on Persian classical music, interactive pitch models and historical interval theory. Scale diagrams are simplified models, not substitutes for melodic practice.\n\n## Main resources\n\n'+'\n'.join(f'- [{P[k][l]["title"]}]({canonical_url(k,l)}): {P[k][l]["lead"]}' for k in published for l in ('en','fa'))+'\n\n## Related projects\n\n- [Persian Music Scales App]('+APP+'en)\n- [Urmawī Advar Atlas]('+ATLAS+')\n- [World Music Scales Atlas]('+WORLD+')\n- [Author website]('+AUTHOR+')\n')
 write('robots.txt','User-agent: *\n'+('Disallow: /\n' if PREVIEW else 'Allow: /\nSitemap: '+BASE+'/sitemap.xml\n'))
 print('Generated',len(published)*2+1,'content pages and',len(retired)*2,'redirects')
